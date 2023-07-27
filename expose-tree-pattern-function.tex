@@ -1,0 +1,359 @@
+%% AMS-LaTeX Created with the Wolfram Language : www.wolfram.com
+
+\documentclass{article}
+\usepackage{amsmath, amssymb, graphics, setspace}
+
+\newcommand{\mathsym}[1]{{}}
+\newcommand{\unicode}[1]{{}}
+
+\newcounter{mathematicapage}
+\begin{document}
+
+\title{Expos{\' e}: A Tree Pattern Function in Mathematica}
+\author{For: {``}Wissenschaftliches Arbeiten,{''} Software Engineering at Fachhochschule Ober{\" o}sterreich, Campus Hagenberg.}
+\date{}
+\maketitle
+
+The present author has implemented the following { }set of Wolfram Language functions in a Wolfram Community project and would like to expand upon
+the underlying concepts and the language used (Heseltine, 2023), in an effort to further his own understanding and present a helpful guide to the
+language and its functional programming paradigm support.
+
+\begin{doublespace}
+\noindent\(\pmb{\text{proofID}[\text{Grid}[\{\_\_\_,\{\text{ID},\text{id$\_$}\},\_\_\_\},\_\_\_]]\text{:=}\text{id};}\\
+\pmb{}\\
+\pmb{\text{subproofs}[}\\
+\pmb{\text{Grid}[}\\
+\pmb{\{\_\_\_,\{\text{Proofs},\text{OpenerView}[\{\text{Arguments},\text{Column}[\text{subproofs$\_$},\_\_\_]\},}\\
+\pmb{\_\_\_]\},\_\_\_\},\_\_\_]]\text{:=}\text{subproofs};}\\
+\pmb{\text{subproofs}[\text{proof$\_$}]\text{:=}\{\};}\\
+\pmb{}\\
+\pmb{\text{getLeanTree}[\text{proof$\_$}]\text{:=}}\\
+\pmb{\text{Tree}[\text{proofID}[\text{proof}],\text{getLeanTree}\text{/@}\text{subproofs}[\text{proof}],}\\
+\pmb{\text{TreeElementLabelStyle}\text{-$>$}}\\
+\pmb{\text{All}\text{-$>$}\text{Directive}[\text{White},16,\text{FontFamily}\text{-$>$}\text{{``}Times New Roman{''}}],}\\
+\pmb{\text{TreeElementStyle}\text{-$>$}}\\
+\pmb{\text{All}\text{-$>$}\text{Directive}[\text{EdgeForm}[\text{Black}],\text{RGBColor}[\text{{``}$\#$B6094A{''}}]]]}\)
+\end{doublespace}
+
+An expos{\' e} of the concepts follows, but first an introduction of both the problem space and language will be helpful. The complete code base
+is available as a G $\unicode{0008}$itHub repository.
+
+The Problem Space
+
+The objective is to extract a tree data structure in the form of certain integer mathematical proof IDs and the related children IDs from a grid
+expression in Wolfram Language. The grid is interpreted by Mathematica but comes from an external program called LEAN, an automated and interactive
+theorem prover. LEAN and the particular implementation details of processing the tree can be treated as a black box for the purposes of this study.
+
+The Wolfram Language
+
+Wolfram Research (2023) describes the language on a high level like this: {``}The Wolfram Language is a highly developed knowledge-based language
+that unifies a broad range of programming paradigms and uses its unique concept of symbolic programming to add a new level of flexibility to the
+very concept of programming.{''} Also, on the point of functional programming: {``}Functional programming is a highly developed and deeply integrated
+core feature of the Wolfram Language, made dramatically richer and more convenient through the symbolic nature of the language.{''}
+
+The functional aspects of Wolfram Language to the point needed to understand the function of interest will be of particular import here, but less
+so the symbolic side. Mathematica is the concrete programming environment used to explore the concepts with examples.
+
+\section*{Lists and Replacements}
+
+Going back to our object of interest:
+
+\begin{doublespace}
+\noindent\(\pmb{\text{proofID}[\text{Grid}[\{\_\_\_,\{\text{ID},\text{id$\_$}\},\_\_\_\},\_\_\_]]\text{:=}\text{id};}\)
+\end{doublespace}
+
+The set of functions we are studying use lists (demarcated with curly brackets, here in a nested fashion) in constructing a pattern, but lists can
+also be generated: Lists are central, general objects in the Wolfram Language since they can be made to represent other objects. \\
+\\
+Internally, they are, of course, functions.
+
+\begin{doublespace}
+\noindent\(\pmb{\text{FullForm}[\{1,2,3\}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\text{List}[1,2,3]\)
+\end{doublespace}
+
+Starting with list creation utilities, here are some helpful functions for handling lists.
+
+\begin{doublespace}
+\noindent\(\pmb{\text{Range}[3]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\{1,2,3\}\)
+\end{doublespace}
+
+This is the same as:
+
+\begin{doublespace}
+\noindent\(\pmb{\text{Range}[1,3,1]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\{1,2,3\}\)
+\end{doublespace}
+
+Compare this to Table, which takes a Wolfram Language iterator in the form \textit{ $\{$i, imin, imax, step$\}$}:
+
+\begin{doublespace}
+\noindent\(\pmb{\text{Table}[2k, \{k,1,10,2\}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\{2,6,10,14,18\}\)
+\end{doublespace}
+
+As with Range, \textit{ imin} and \textit{ step} can be omitted (set to 1).
+
+One might like to change the display orientation, here using {``}$\%${''} to access the evaluation immediately prior:
+
+\begin{doublespace}
+\noindent\(\pmb{\text{Column}[\%]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\begin{array}{l}
+ 2 \\
+ 6 \\
+ 10 \\
+ 14 \\
+ 18 \\
+\end{array}\)
+\end{doublespace}
+
+Matrices are similarly a matter of display, of nested lists. A construction using two iterators might look as follows.
+
+\begin{doublespace}
+\noindent\(\pmb{\text{Table}[i * j, \{i,1,3\},\{j,1,4\}] \text{//} \text{MatrixForm}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\left(
+\begin{array}{cccc}
+ 1 & 2 & 3 & 4 \\
+ 2 & 4 & 6 & 8 \\
+ 3 & 6 & 9 & 12 \\
+\end{array}
+\right)\)
+\end{doublespace}
+
+It is important to note the difference to this expression reversing the order of the iterators.
+
+\begin{doublespace}
+\noindent\(\pmb{\text{Table}[i * j,\{j,1,4\},\{i,1,3\}] \text{//} \text{MatrixForm} \text{(* // TableForm *)}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\left(
+\begin{array}{ccc}
+ 1 & 2 & 3 \\
+ 2 & 4 & 6 \\
+ 3 & 6 & 9 \\
+ 4 & 8 & 12 \\
+\end{array}
+\right)\)
+\end{doublespace}
+
+That is, the first iterator determines the number of rows, in the 2D context. Another way to say this is that the inner iterator determines the value
+of the outer iterator. The mathematical expression being evaluated is, of course, commutative, however.
+
+For measuring lists, the Length-Function gives the outermost dimension, whereas \textit{ Dimensions[]} gives all dimensions of nested lists. The
+number of dimensions is given by \textit{ ArrayDepth[]}.\\
+\\
+For testing and sampling lists the following functions are available. \textit{ Position[list, element] }gives the (list of) index positions at which
+\textit{ element }sits, whereas \textit{ Select[list, predicate] }tests elements of the list against \textit{ predicate, }sampling those elements
+that satisfy, say, even parity with \textit{ EvenQ. }Given a position, elements can be extracted using \textit{ Part[] }or its short form in double-square-brackets
+notation, here as a matrix-example.
+
+\begin{doublespace}
+\noindent\(\pmb{\text{Table}\left[a_{i,j}, \{i,3\},\{j,3\}\right] \text{//} \text{MatrixForm}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\left(
+\begin{array}{ccc}
+ a_{1,1} & a_{1,2} & a_{1,3} \\
+ a_{2,1} & a_{2,2} & a_{2,3} \\
+ a_{3,1} & a_{3,2} & a_{3,3} \\
+\end{array}
+\right)\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\%[[2,1]]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(a_{2,1}\)
+\end{doublespace}
+
+\textit{ Take[] }is similar to \textit{ Part[] }but allows sampling consecutively placed elements in a list.
+
+This section ends with an analysis of the {``}$\_${''}-character to symbolize any other Mathematica object (Wolfram Language expressions), which
+is useful for patterns in general, and particularly, the proofID function at the beginning of this section. The crucial difference is between two
+underscores, {``}$\_\_${''} or BlankSequence, standing for any sequence of one or more expressions, and three underscores, {``}$\_\_\_${''} or BlankNullSequence,
+which also allows zero such expressions.
+
+The following example, taken from Wolfram Research (2023), makes the limitation of BlankSequence clear.
+
+\begin{doublespace}
+\noindent\(\pmb{f[\text{x$\_\_$}]\text{:=}\text{Length}[\{x\}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\{f[x,y,z],f[]\}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\{3,f[]\}\)
+\end{doublespace}
+
+Contrast this with use of the BlankNullSequence:
+
+\begin{doublespace}
+\noindent\(\pmb{\text{f2}[\text{x$\_\_\_$}]\text{:=}p[x,x]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\{\text{f2}[],\text{f2}[1],\text{f2}[1,a]\}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\{p[],p[1,1],p[1,a,1,a]\}\)
+\end{doublespace}
+
+Blank ({``}$\_${''}) is the most limited pattern character in that it can stand for any Wolfram Language Expression, but only exactly one such expression.
+
+\begin{doublespace}
+\noindent\(\pmb{\text{f3}[\text{x$\_$}] \text{:=} \text{{``}evaluated{''}}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\{\text{f3}[], \text{f3}[1], \text{f3}[1, \text{a}]\}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\{\text{f3}[],\text{evaluated},\text{f3}[1,\text{a}]\}\)
+\end{doublespace}
+
+\section*{Functional Programming}
+
+With lists there is now a background in place to consider Wolfram Language{'}s functional aspects in more detail. For a definition, I refer to the
+Mathematica Cookbook (Mangano, 2010, p. 31): {``}All functional languages emphasize the evaluation of expressions to produce values rather than commands
+or statements that are executed for their side effects.{''} Since Mathematica also allows for functions like \textit{ Do[],} the language is not
+purely functional, instead supporting at least also the procedural paradigm. The focus here however is functional programming by a given example,
+not a comparison of paradigms or more analysis of the functional one.
+
+With this, the following core functional programming {``}primitives{''} are summed up in a helpful reference table in (Mangano, 2010, p. 26) and
+will lead to a discussion of the relative idioms and their application.
+
+\begin{doublespace}
+\noindent\(\pmb{\text{Grid}[\{\{\text{{``}Function{''}},\text{{``}Operator{''}},\text{{``}Description{''}}\},}\\
+\pmb{\{\text{{``}Map[f, expr]{''}},\text{{``}/@{''}},}\\
+\pmb{\text{$\texttt{"}$Return the list that results from executing f on each }}\\
+\pmb{\text{element of an expr$\texttt{"}$}\}, }\\
+\pmb{\{\text{{``}Apply[f, expr]{''}}, \text{{``}@@{''}}, }\\
+\pmb{\text{$\texttt{"}$Return the result of replacing the ehad of a list with }}\\
+\pmb{\text{function f$\texttt{"}$}\}, }\\
+\pmb{\{\text{{``}Apply[f, expr, $\{$1$\}$]{''}}, \text{{``}@@@{''}}, }\\
+\pmb{\text{$\texttt{"}$Applies f at level 1 inside list. In other words, }}\\
+\pmb{\text{replace the head of all elements$\texttt{"}$}\}, }\\
+\pmb{\{\text{{``}Fold[f, x, $\{$a1, a2, a3$\}$]{''}}, \text{{``}N/A{''}}, }\\
+\pmb{\text{$\texttt{"}$If list hast length 0, return x, otherwise return }}\\
+\pmb{\text{f[f[f[x, a1], a2], a3]...$\texttt{"}$}\}, }\\
+\pmb{\{\text{{``}FoldList[f, x, $\{$a1, a2, a3, ...$\}$]{''}}, \text{{``}N/A{''}}, }\\
+\pmb{\text{{``}Return the list $\{$x, f[x, a1], f[f[x, a1], a2], ...$\}${''}}\}, }\\
+\pmb{\{\text{{``}Nest[f, expr, n]{''}}, \text{{``}N/A{''}}, }\\
+\pmb{\text{$\texttt{"}$Return the list f[f[f[...f[expr]...]]] (i.e. f applied }}\\
+\pmb{\text{n times)$\texttt{"}$}\}, \{\text{{``}NestList[f, expr, n]{''}}, \text{{``}N/A{''}}, }\\
+\pmb{\text{$\texttt{"}$Return the list $\{$x, f[expr], f[f[expr]], ...$\}$ where }}\\
+\pmb{\text{f repeats up to n times$\texttt{"}$}\}\},\text{Frame}\text{-$>$}\text{All}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\begin{array}{ccc}
+ \text{Function} & \text{Operator} & \text{Description} \\
+ \text{Map[f, expr]} & \text{/@} & \text{Return the list that results from executing f on each element of an expr} \\
+ \text{Apply[f, expr]} & \text{@@} & \text{Return the result of replacing the ehad of a list with function f} \\
+ \text{Apply[f, expr, $\{$1$\}$]} & \text{@@@} & \text{Applies f at level 1 inside list. In other words, replace the head of all elements} \\
+ \text{Fold[f, x, $\{$a1, a2, a3$\}$]} & \text{N/A} & \text{If list hast length 0, return x, otherwise return f[f[f[x, a1], a2], a3]...} \\
+ \text{FoldList[f, x, $\{$a1, a2, a3, ...$\}$]} & \text{N/A} & \text{Return the list $\{$x, f[x, a1], f[f[x, a1], a2], ...$\}$} \\
+ \text{Nest[f, expr, n]} & \text{N/A} & \text{Return the list f[f[f[...f[expr]...]]] (i.e. f applied n times)} \\
+ \text{NestList[f, expr, n]} & \text{N/A} & \text{Return the list $\{$x, f[expr], f[f[expr]], ...$\}$ where f repeats up to n times} \\
+\end{array}\)
+\end{doublespace}
+
+This also covers almost all of the sort-hand notation after blanks, where ampersand ({``}$\&${''}) and hash ({``}$\#${''}) still need mentioning:
+this ties in perfectly with the topic of functional operations and goes to show that indeed, functional is at the heart of the language, since the
+short-hand notation offered caters to the paradigm. This example illustrates the usages, in so-called pure functions (lambda expressions), starting
+with the named-function counter-example.
+
+\begin{doublespace}
+\noindent\(\pmb{h[\text{x$\_$}]\text{:=}f[x]+g[x]}\)
+\end{doublespace}
+
+Combine this with \textit{ Map[]} in the following way.
+
+\begin{doublespace}
+\noindent\(\pmb{\text{Map}[h,\{a,b,c\}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\{f[a]+g[a],f[b]+g[b],f[c]+g[c]\}\)
+\end{doublespace}
+
+The pure-function alternative is written as follows.
+
+\begin{doublespace}
+\noindent\(\pmb{\text{Map}[f[\#]+g[\#]\&,\{a,b,c\}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\{f[a]+g[a],f[b]+g[b],f[c]+g[c]\}\)
+\end{doublespace}
+
+Here ampersand demarcates the end of the function expression, and hash marks the arguments. The non-short-hand version is:
+
+\begin{doublespace}
+\noindent\(\pmb{\text{Map}[\text{Function}[x,f[x]+ g[x]],\{a,b,c\}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\{f[a]+g[a],f[b]+g[b],f[c]+g[c]\}\)
+\end{doublespace}
+
+I refer to the Functional Operators Tutorial (Wolfram Research, 2023) for the minor details including, for example, the modifications of the hash
+operator, such as \textit{ $\#$n} or \textit{ $\#\#$}. 
+
+\pmb{ TODO: functional programming idioms (map is one, see cookbook), application to the example being studied. Finish reading cookbook chapter and
+correlate in the Wellin book. Idioms also in the tutorial. Idiom in the example?}
+
+\section*{Rule-based Programming}
+
+TODO
+
+\section*{Recursion}
+
+TODO
+
+\section*{Limitations and Summary}
+
+This study did not cover numerics, graphics programming, { }front end programming, or writing packages, all major topics related to the current discussion:
+An Introduction to Programming with Mathematica (2005, Wellin et al.) completes the picture at the intended overview level of analysis. The focus
+here has been on one particular example, solving one problem, in Wolfram Language; it is involved enough to be viewed in context of the major themes
+chosen after introducing the language in broad strokes. These themes were lists; functional programming as considered for itself but also relative
+to other paradigms; rule-based programming as the particularly helpful approach in this situation; and recursion, which we could not have easily
+done without.
+
+\section*{References}
+
+Heseltine, J. (2023) \textit{ Empirical metamathematics: extending the Lean-to-Mathematica bridge. }Wolfram Community. Available at: https://community.wolfram.com/groups/-/m/t/2957419
+(Accessed: 26 July 2023).\\
+Mangano, S. (2010) \textit{ Mathematica Cookbook. }Sebastopol, CA: O{'}Reilly Media, Inc.\\
+Wellin, P. R. (2005) \textit{ An Introduction to Programming in Mathematica. }Cambridge, UK: Cambridge University Press.\\
+Wolfram Research (2023) Wolfram Language $\&$ System Documentation Center. Available at: https://reference.wolfram.com/language/ (Accessed: 23 July
+2023).
+
+\end{document}
