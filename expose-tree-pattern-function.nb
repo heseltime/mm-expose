@@ -9,10 +9,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    336068,       7599]
-NotebookOptionsPosition[    325442,       7429]
-NotebookOutlinePosition[    325846,       7445]
-CellTagsIndexPosition[    325803,       7442]
+NotebookDataLength[    496697,      11404]
+NotebookOptionsPosition[    477323,      11122]
+NotebookOutlinePosition[    477727,      11138]
+CellTagsIndexPosition[    477684,      11135]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -222,34 +222,22 @@ def
 /percent 58 def
 /underscore ,
 
-f
-/z 60 def
-/B 61 def
-/quoteright 62 def
-/six 63 def
-/ampersand 64 def
-/numbersign 65 def
-/five 66 def
-/semicolon 67 def
-/J 68 def
-/slash 69 def
-/nine 70 def
-/seven 71 def
-/four 72 def
-/U 73 def
-/K 74 def
-end readonly def
-/sfnts [
-<0001000000090080000300106376742001220dca00002c640000002a6670676d06599c370000
-2c9000000173676c79661dc75add0000009c00002bc8686561640d10be9600002e0400000036
-686865610a84061200002e3c00000024686d747891b20e5300002e60000001406c6f63610007
-232800002fa0000001446d617870026f027a000030e400000020707265709a63fd8700003104
-000000560005005900000235029400030009000f00120015007100b800004558b800012f1bb9
-000100113e59b800004558b800002f1bb9000000053e59b900040001f4ba0008000000011112
-39ba000b00000001111239b8000110b9000d0001f4ba001000000001111239ba001200000001
-111239ba001300000001111239ba00140000000111123930313311211125212f01230737333f
-0123170337270111075901dcfe9001014934043636043142eb42797f7f01587e0294fd6c3a84
-6767c55e7777fe8de6e8fe3201cee80000000001005a000001de0290,
+Cell["\<\
+Wolfram Research (2023) describes the language on a high level like this: \
+\[OpenCurlyDoubleQuote]The Wolfram Language is a highly developed \
+knowledge-based language that unifies a broad range of programming paradigms \
+and uses its unique concept of symbolic programming to add a new level of \
+flexibility to the very concept of programming.\[CloseCurlyDoubleQuote] Also, \
+on the point of functional programming: \[OpenCurlyDoubleQuote]Functional \
+programming is a highly developed and deeply integrated core feature of the \
+Wolfram Language, made dramatically richer and more convenient through the \
+symbolic nature of the language.\[CloseCurlyDoubleQuote]\
+\>", "Text",
+ CellChangeTimes->{{3.898926619544454*^9, 3.8989266258192263`*^9}, {
+  3.898928973454784*^9, 3.898928974312503*^9}, {3.8993922151923666`*^9, 
+  3.8993922161321635`*^9}, {3.899392260679282*^9, 
+  3.899392344131775*^9}},ExpressionUUID->"00820163-b490-4547-9ce3-\
+524d76d24e61"],
 
 04d00b800004558
 b800012f1bb9000100113e59b800004558b800002f1bb9000000053e59b8000110b900040002
@@ -285,15 +273,16 @@ f4303105222e0235343e0233321e0215140e0227323e0235342e0223220e0215141e02010f2d
 
 Cell["\<\
 They use lists (demarcated with curly brackets, here in a nested fashion) in \
-constructing a pattern, but lists can also be generated: Lists are central, \
-general objects in the Wolfram Language since they can be made to represent \
-other objects. 
+constructing a pattern, which will be discussed in a later section, but lists \
+can also be generated: Lists are central, general objects in the Wolfram \
+Language since they can be made to represent other objects. 
 
 Internally, they are, of course, functions.\
 \>", "Text",
  CellChangeTimes->{{3.8989266617404666`*^9, 3.8989268510934105`*^9}, {
   3.898929088206012*^9, 3.898929147230256*^9}, {3.8993987134182673`*^9, 
-  3.8993987166282096`*^9}},ExpressionUUID->"77746dc5-777d-49fa-8831-\
+  3.8993987166282096`*^9}, {3.8994724544460382`*^9, 
+  3.899472465506562*^9}},ExpressionUUID->"77746dc5-777d-49fa-8831-\
 310190cd9c0b"],
 
 Cell[CellGroupData[{
@@ -553,11 +542,14 @@ b800004558b800092f1bb9000900113e59b800004558b800002f1bb9000000053e59b8000045
 340153fd70019d87326734fea9000002005a000002200290000f0018005c00b800004558b800
 012f1bb900010011,
 
-800004558b8000f2f1bb9000f00053e59b800004558b8000c2f1bb9
-000c00053e59ba00110001000f111239b800112fba000a0011000d111239b8000edcb8000110
-b900180002f43031331133321e02151406071323032319013332363534262b015acd32553d22
-5044a75e9e776e4d52524d6e0290132c46334d5c11fee20115feeb01593f404134000002002f
-ff3301d901f200140023007e00,
+Cell["\<\
+The following example, taken from Wolfram Research (2023), makes the \
+limitation of BlankSequence clear.\
+\>", "Text",
+ CellChangeTimes->{{3.899101766644408*^9, 3.8991017884927063`*^9}, {
+  3.899103834607627*^9, 
+  3.899103838556383*^9}},ExpressionUUID->"176ffc13-9058-4f9e-b181-\
+7d030a4ef2a9"],
 
 04558b8000d2f1bb9000d00093e59b800004558b80005
 2f1bb9000500053e59b800004558b800002f1bb9000000073e59ba00020005000d111239ba00
@@ -7256,53 +7248,3750 @@ GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
   3.899399779926029*^9, 3.8993999726490116`*^9},
  CellLabel->"Out[64]=",ExpressionUUID->"d26c0f82-83da-47f1-a090-e960a2336774"],
 
-Cell[TextData[StyleBox["On the level of analysis of the function code \
-however, ... TODO TR",
- FontWeight->"Bold"]], "Text",
- CellChangeTimes->{{3.8993989983292537`*^9, 
-  3.8993990123585587`*^9}},ExpressionUUID->"4b7d98a9-1128-4b75-96a8-\
-05cdc6230586"]
+Cell["\<\
+With this out of the way, rules are the essential building block in this \
+chapter: \[OpenCurlyDoubleQuote]Everything that the Wolfram Language does can \
+be thought of as derived from its ability to apply general transformation \
+rules to arbitrary symbolic expressions\[CloseCurlyDoubleQuote] (Wolfram \
+Research, 2023). They can be used for string operations like so, where the \
+arrow gives the replacement rule.\
+\>", "Text",
+ CellChangeTimes->{{3.8993989983292537`*^9, 3.8993990123585587`*^9}, {
+  3.8994714076765456`*^9, 3.899471467014536*^9}, {3.8994715083343067`*^9, 
+  3.899471551930394*^9}, {3.8994716896006536`*^9, 3.8994717067175384`*^9}, {
+  3.8994717834751625`*^9, 
+  3.899471800042189*^9}},ExpressionUUID->"4b7d98a9-1128-4b75-96a8-\
+05cdc6230586"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringReplace", "[", 
+  RowBox[{"\"\<Mathematica is multi-paradigm\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{"\"\<Mathematica\>\"", "->", " ", "\"\<Wolfram Language\>\""}], 
+    "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8994717115534816`*^9, 3.8994717690579853`*^9}},
+ CellLabel->
+  "In[115]:=",ExpressionUUID->"1ff2605c-45d2-4594-953b-0e852e233a07"],
+
+Cell[BoxData["\<\"Wolfram Language is multi-paradigm\"\>"], "Output",
+ CellChangeTimes->{3.8994717692534423`*^9},
+ CellLabel->
+  "Out[115]=",ExpressionUUID->"2ab02529-5274-4a86-9103-d0445122dad7"]
+}, Open  ]],
+
+Cell["\<\
+Here is short-hand notation and a useful list item swap rule:\
+\>", "Text",
+ CellChangeTimes->{{3.8994718467611732`*^9, 
+  3.899471862177968*^9}},ExpressionUUID->"49b623ec-92fd-4a18-9439-\
+113d5ac58645"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\[Alpha]", ",", "1"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Beta]", ",", "2"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Gamma]", ",", "3"}], "}"}]}], "}"}], " ", "/.", " ", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"x_", ",", "y_"}], "}"}], "->", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", "x"}], "}"}]}]}]], "Input",
+ CellChangeTimes->{{3.8994718728179517`*^9, 3.899472009973815*^9}},
+ CellLabel->
+  "In[117]:=",ExpressionUUID->"a9a2cf23-f04f-4fc7-bd33-9877b471b06e"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "\[Alpha]"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "\[Beta]"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "\[Gamma]"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.8994720107368555`*^9},
+ CellLabel->
+  "Out[117]=",ExpressionUUID->"0c2b4879-787c-412b-9592-a3372704e681"]
+}, Open  ]],
+
+Cell[TextData[{
+ "At this point we also circle back to the blank-notation for patterns: The \
+above example is taken from (Wellin, p. 150), and to highlight the concept\
+\[CloseCurlyQuote]s importance and its relationship to lists: \
+\[OpenCurlyDoubleQuote]Rule-based programming is such a useful construct for \
+manipulating lists and arbitrary expressions that no user of ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " should be without a working knowledge of this paradigm.\
+\[CloseCurlyDoubleQuote] (Ibid.)"
+}], "Text",
+ InitializationCell->True,
+ CellChangeTimes->{{3.8994720223672504`*^9, 
+  3.899472259244085*^9}},ExpressionUUID->"431390d4-1754-40c2-acf1-\
+0f5c4e5c0803"],
+
+Cell["\<\
+The following built-in functions help to implement the paradigm as discussed \
+so far: Here a generic test using blanks.\
+\>", "Text",
+ CellChangeTimes->{{3.899472262644293*^9, 3.899472295297493*^9}, {
+  3.8994723776165915`*^9, 
+  3.899472387571741*^9}},ExpressionUUID->"60afb37b-f6af-4418-a8d6-\
+4bac709001a2"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MatchQ", "[", 
+  RowBox[{"\"\<Mathematica\>\"", ",", " ", "_"}], "]"}]], "Input",
+ CellChangeTimes->{{3.899472303342549*^9, 3.8994723143706903`*^9}},
+ CellLabel->
+  "In[118]:=",ExpressionUUID->"e1390778-207c-4cb6-ad7d-67f733740abd"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.899472314807435*^9},
+ CellLabel->
+  "Out[118]=",ExpressionUUID->"ce56864e-0ff4-4a31-874f-7f8cc2b1b520"]
+}, Open  ]],
+
+Cell["\<\
+And here the pattern matching function already discussed in terms of lists, \
+the first of our three functions, implementing a more complex pattern \
+matching routine.\
+\>", "Text",
+ CellChangeTimes->{{3.899472573125552*^9, 3.8994725838241453`*^9}, {
+  3.8994726859277916`*^9, 3.899472699000608*^9}, {3.899473175939595*^9, 
+  3.899473189576274*^9}, {3.8994742674607964`*^9, 
+  3.8994742722015767`*^9}},ExpressionUUID->"c1c176d9-3677-46fc-9058-\
+d1bff79bf8c0"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"proofID", "[", 
+    RowBox[{"Grid", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"___", ",", 
+        RowBox[{"{", 
+         RowBox[{"ID", ",", "id_"}], "}"}], ",", "___"}], "}"}], ",", "___"}],
+      "]"}], "]"}], ":=", "id"}], ";"}]], "Input",
+ CellChangeTimes->{{3.898929031886757*^9, 3.898929031887765*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"9cb399ce-331a-4d14-80dc-e2b0e35fe18c"],
+
+Cell[TextData[{
+ "Combine this pattern with the built-on ",
+ StyleBox["Cases[] ",
+  FontSlant->"Italic"],
+ "to extract the matches and compile them to a list, given appropriate input."
+}], "Text",
+ CellChangeTimes->{{3.8994727091133385`*^9, 3.8994727399748106`*^9}, {
+  3.8994732242395973`*^9, 
+  3.8994732448524275`*^9}},ExpressionUUID->"aa8cbfcb-a73d-41c1-a69a-\
+10f1de7ea778"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"pattern", " ", "=", " ", 
+   RowBox[{"Grid", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"___", ",", 
+       RowBox[{"{", 
+        RowBox[{"ID", ",", "id_"}], "}"}], ",", "___"}], "}"}], ",", "___"}], 
+    "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8994732547146015`*^9, 3.89947326681215*^9}},
+ CellLabel->
+  "In[120]:=",ExpressionUUID->"79041ada-66a4-4c62-90ac-e947e4ca9238"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Cases", "[", 
+  RowBox[{
+   RowBox[{"subproofs", "[", "leanProof", "]"}], ",", " ", "pattern"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8994733300658665`*^9, 3.8994733446176205`*^9}, {
+  3.8994734074126587`*^9, 3.8994734197611513`*^9}},
+ CellLabel->
+  "In[127]:=",ExpressionUUID->"c6243b71-9603-493f-85d3-00b25855d8d5"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TagBox[GridBox[{
+      {"Goal", "\<\"p : \:2115\"\>"},
+      {"ID", "0"},
+      {"Rule", "Assumption"}
+     },
+     AutoDelete->False,
+     GridBoxBackground->{"Columns" -> {
+         RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+     GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Grid"], ",", 
+   TagBox[GridBox[{
+      {"Goal", "\<\"\[ForAll] {m n : \:2115}, nat.prime p \[RightArrow] p \
+\[Divides] m ^ n \[RightArrow] p \[Divides] m\"\>"},
+      {"ID", "23"},
+      {"Rule", "\<\"\[ForAll]I\"\>"},
+      {"Proofs", 
+       TagBox[
+        DynamicModuleBox[{Typeset`var$$ = False}, 
+         InterpretationBox[
+          StyleBox[
+           PaneSelectorBox[{False->GridBox[{
+              {
+               OpenerBox[Dynamic[Typeset`var$$],
+                Appearance->Automatic,
+                AutoAction->False,
+                ContinuousAction->False,
+                Enabled->Automatic], "Arguments"}
+             },
+             AutoDelete->False,
+             BaselinePosition->{1, 1},
+             GridBoxAlignment->{"Columns" -> {{Left}}},
+             GridBoxBackground->{"Columns" -> {{Automatic}}},
+             
+             GridBoxItemSize->{
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+             GridBoxSpacings->{"Columns" -> {{0.2}}, "Rows" -> {{0.5}}}], 
+            True->GridBox[{
+              {
+               OpenerBox[Dynamic[Typeset`var$$],
+                Appearance->Automatic,
+                AutoAction->False,
+                ContinuousAction->False,
+                Enabled->Automatic], "Arguments"},
+              {"", 
+               PaneBox[
+                TagBox[GridBox[{
+                   {
+                    TagBox[GridBox[{
+                    {"Goal", "\<\"m : \:2115\"\>"},
+                    {"ID", "1"},
+                    {"Rule", "Assumption"}
+                    },
+                    AutoDelete->False,
+                    GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                    
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+                    "Grid"]},
+                   {
+                    TagBox[GridBox[{
+                    {
+                    "Goal", "\<\"\[ForAll] {n : \:2115}, nat.prime p \
+\[RightArrow] p \[Divides] m ^ n \[RightArrow] p \[Divides] m\"\>"},
+                    {"ID", "22"},
+                    {"Rule", "\<\"\[ForAll]I\"\>"},
+                    {"Proofs", 
+                    TagBox[
+                    DynamicModuleBox[{Typeset`var$$ = False}, 
+                    InterpretationBox[
+                    StyleBox[
+                    PaneSelectorBox[{False->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                    
+                    GridBoxSpacings->{
+                    "Columns" -> {{0.2}}, "Rows" -> {{0.5}}}], True->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"},
+                    {"", 
+                    PaneBox[
+                    TagBox[GridBox[{
+                    {
+                    TagBox[GridBox[{
+                    {"Goal", "\<\"n : \:2115\"\>"},
+                    {"ID", "2"},
+                    {"Rule", "Assumption"}
+                    },
+                    AutoDelete->False,
+                    GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Grid"]},
+                    {
+                    TagBox[GridBox[{
+                    {
+                    "Goal", "\<\"nat.prime p \[RightArrow] p \[Divides] m ^ n \
+\[RightArrow] p \[Divides] m\"\>"},
+                    {"ID", "21"},
+                    {"Rule", "\<\"\[ForAll]I\"\>"},
+                    {"Proofs", 
+                    TagBox[
+                    DynamicModuleBox[{Typeset`var$$ = False}, 
+                    InterpretationBox[
+                    StyleBox[
+                    PaneSelectorBox[{False->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}},
+                    
+                    GridBoxSpacings->{"Columns" -> {{0.2}}, 
+                    "Rows" -> {{0.5}}}], True->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"},
+                    {"", 
+                    PaneBox[
+                    TagBox[GridBox[{
+                    {
+                    TagBox[GridBox[{
+                    {"Goal", "\<\"pp : nat.prime p\"\>"},
+                    {"ID", "3"},
+                    {"Rule", "Assumption"}
+                    },
+                    AutoDelete->False,
+                    GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Grid"]},
+                    {
+                    TagBox[GridBox[{
+                    {
+                    "Goal", "\<\"p \[Divides] m ^ n \[RightArrow] p \
+\[Divides] m\"\>"},
+                    {"ID", "20"},
+                    {"Rule", "\<\"\[ForAll]I\"\>"},
+                    {"Proofs", 
+                    TagBox[
+                    DynamicModuleBox[{Typeset`var$$ = False}, 
+                    InterpretationBox[
+                    StyleBox[
+                    PaneSelectorBox[{False->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{
+                    Automatic}}},
+                    GridBoxSpacings->{
+                    "Columns" -> {{0.2}}, "Rows" -> {{0.5}}}], True->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"},
+                    {"", 
+                    PaneBox[
+                    TagBox[GridBox[{
+                    {
+                    TagBox[GridBox[{
+                    {"Goal", "\<\"h : p \[Divides] m ^ n\"\>"},
+                    {"ID", "4"},
+                    {"Rule", "Assumption"}
+                    },
+                    AutoDelete->False,
+                    GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{
+                    Automatic}}}],
+                    "Grid"]},
+                    {
+                    TagBox[GridBox[{
+                    {"Goal", "\<\"p \[Divides] m\"\>"},
+                    {"ID", "19"},
+                    {"Rule", "\<\"nat.rec\"\>"},
+                    {"Proofs", 
+                    TagBox[
+                    DynamicModuleBox[{Typeset`var$$ = False}, 
+                    InterpretationBox[
+                    StyleBox[
+                    PaneSelectorBox[{False->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}},
+                    GridBoxSpacings->{
+                    "Columns" -> {{0.2}}, "Rows" -> {{0.5}}}], True->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"},
+                    {"", 
+                    PaneBox[
+                    TagBox[GridBox[{
+                    {
+                    TagBox[GridBox[{
+                    {
+                    "Goal", "\<\"p \[Divides] m ^ 0 \[RightArrow] p \
+\[Divides] m\"\>"},
+                    {"ID", "8"},
+                    {"Rule", "\<\"\[ForAll]I\"\>"},
+                    {"Proofs", 
+                    TagBox[
+                    DynamicModuleBox[{Typeset`var$$ = False}, 
+                    InterpretationBox[
+                    StyleBox[
+                    PaneSelectorBox[{False->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}},
+                    GridBoxSpacings->{"Columns" -> {{0.2}}, 
+                    "Rows" -> {{0.5}}}], True->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"},
+                    {"", 
+                    PaneBox[
+                    TagBox[GridBox[{
+                    {
+                    TagBox[GridBox[{
+                    {"Goal", "\<\"h : p \[Divides] m ^ 0\"\>"},
+                    {"ID", "5"},
+                    {"Rule", "Assumption"}
+                    },
+                    AutoDelete->False,
+                    GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Grid"]},
+                    {
+                    TagBox[GridBox[{
+                    {"Goal", "\<\"p \[Divides] m\"\>"},
+                    {"ID", "7"},
+                    {"Rule", "\<\"not.elim\"\>"},
+                    {"Proofs", 
+                    TagBox[
+                    DynamicModuleBox[{Typeset`var$$ = False}, 
+                    InterpretationBox[
+                    StyleBox[
+                    PaneSelectorBox[{False->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}},
+                    GridBoxSpacings->{"Columns" -> {{0.2}}, "Rows" -> {{
+                    0.5}}}], True->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"},
+                    {"", 
+                    PaneBox[
+                    TagBox[GridBox[{
+                    {
+                    TagBox[GridBox[{
+                    {"Goal", "\<\"\[Not]p \[Divides] 1\"\>"},
+                    {"ID", "6"},
+                    {"Rule", "\<\"nat.prime.not_dvd_one\"\>"},
+                    {"Proofs", 
+                    TagBox[
+                    DynamicModuleBox[{Typeset`var$$ = False}, 
+                    InterpretationBox[
+                    StyleBox[
+                    PaneSelectorBox[{False->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}},
+                    GridBoxSpacings->{"Columns" -> {{0.2}}, 
+                    "Rows" -> {{0.5}}}], True->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"},
+                    {"", 
+                    PaneBox[
+                    TagBox[GridBox[{
+                    {
+                    TagBox[GridBox[{
+                    {"Goal", "\<\"pp : nat.prime p\"\>"},
+                    {"ID", "3"},
+                    {"Rule", "Assumption"}
+                    },
+                    AutoDelete->False,
+                    GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Grid"]}
+                    },
+                    DefaultBaseStyle->"Column",
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Column"],
+                    ImageMargins->0]}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}},
+                    GridBoxSpacings->{"Columns" -> {{0.2}}, "Rows" -> {{
+                    0.5}}}]}, Dynamic[
+                    TrueQ[Typeset`var$$]],
+                    Alignment->Automatic,
+                    BaseStyle->{},
+                    BaselinePosition->Baseline,
+                    DefaultBaseStyle->"OpenerView",
+                    ImageMargins->0,
+                    ImageSize->Automatic],
+                    Deployed->False,
+                    StripOnInput->False],
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "pp : nat.prime p"}, {$CellContext`ID, 
+                    3}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}, False]],
+                    DynamicModuleValues:>Automatic],
+                    Setting[#, {0}]& ]}
+                    },
+                    AutoDelete->False,
+                    GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Grid"]},
+                    {
+                    TagBox[GridBox[{
+                    {"Goal", "\<\"h : p \[Divides] m ^ 0\"\>"},
+                    {"ID", "5"},
+                    {"Rule", "Assumption"}
+                    },
+                    AutoDelete->False,
+                    GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Grid"]}
+                    },
+                    DefaultBaseStyle->"Column",
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Column"],
+                    ImageMargins->0]}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}},
+                    GridBoxSpacings->{"Columns" -> {{0.2}}, 
+                    "Rows" -> {{0.5}}}]}, Dynamic[
+                    TrueQ[Typeset`var$$]],
+                    Alignment->Automatic,
+                    BaseStyle->{},
+                    BaselinePosition->Baseline,
+                    DefaultBaseStyle->"OpenerView",
+                    ImageMargins->0,
+                    ImageSize->Automatic],
+                    Deployed->False,
+                    StripOnInput->False],
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "\[Not]p \[Divides] 1"}, {$CellContext`ID, 6}, {Rule, 
+                    "nat.prime.not_dvd_one"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "pp : nat.prime p"}, {$CellContext`ID, 
+                    3}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ 0"}, {$CellContext`ID, 
+                    5}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}, False]],
+                    DynamicModuleValues:>Automatic],
+                    Setting[#, {0}]& ]}
+                    },
+                    AutoDelete->False,
+                    GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Grid"]}
+                    },
+                    DefaultBaseStyle->"Column",
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Column"],
+                    ImageMargins->0]}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}},
+                    GridBoxSpacings->{
+                    "Columns" -> {{0.2}}, "Rows" -> {{0.5}}}]}, Dynamic[
+                    TrueQ[Typeset`var$$]],
+                    Alignment->Automatic,
+                    BaseStyle->{},
+                    BaselinePosition->Baseline,
+                    DefaultBaseStyle->"OpenerView",
+                    ImageMargins->0,
+                    ImageSize->Automatic],
+                    Deployed->False,
+                    StripOnInput->False],
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ 0"}, {$CellContext`ID, 
+                    5}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m"}, {$CellContext`ID, 7}, {Rule, 
+                    "not.elim"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "\[Not]p \[Divides] 1"}, {$CellContext`ID, 6}, {Rule, 
+                    "nat.prime.not_dvd_one"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "pp : nat.prime p"}, {$CellContext`ID, 
+                    3}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ 0"}, {$CellContext`ID, 
+                    5}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}, False]],
+                    DynamicModuleValues:>Automatic],
+                    Setting[#, {0}]& ]}
+                    },
+                    AutoDelete->False,
+                    GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{
+                    Automatic}}}],
+                    "Grid"]},
+                    {
+                    TagBox[GridBox[{
+                    {
+                    "Goal", "\<\"\[ForAll] (n : \:2115), (p \[Divides] m ^ n \
+\[RightArrow] p \[Divides] m) \[RightArrow] p \[Divides] m ^ n.succ \
+\[RightArrow] p \[Divides] m\"\>"},
+                    {"ID", "18"},
+                    {"Rule", "\<\"\[ForAll]I\"\>"},
+                    {"Proofs", 
+                    TagBox[
+                    DynamicModuleBox[{Typeset`var$$ = False}, 
+                    InterpretationBox[
+                    StyleBox[
+                    PaneSelectorBox[{False->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}},
+                    GridBoxSpacings->{
+                    "Columns" -> {{0.2}}, "Rows" -> {{0.5}}}], True->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"},
+                    {"", 
+                    PaneBox[
+                    TagBox[GridBox[{
+                    {
+                    TagBox[GridBox[{
+                    {
+                    "Goal", "\<\"(p \[Divides] m ^ n \[RightArrow] p \
+\[Divides] m) \[RightArrow] p \[Divides] m ^ n.succ \[RightArrow] p \
+\[Divides] m\"\>"},
+                    {"ID", "17"},
+                    {"Rule", "\<\"\[ForAll]I\"\>"},
+                    {"Proofs", 
+                    TagBox[
+                    DynamicModuleBox[{Typeset`var$$ = False}, 
+                    InterpretationBox[
+                    StyleBox[
+                    PaneSelectorBox[{False->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}},
+                    GridBoxSpacings->{"Columns" -> {{0.2}}, 
+                    "Rows" -> {{0.5}}}], True->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"},
+                    {"", 
+                    PaneBox[
+                    TagBox[GridBox[{
+                    {
+                    TagBox[GridBox[{
+                    {
+                    "Goal", "\<\"IH : p \[Divides] m ^ n \[RightArrow] p \
+\[Divides] m\"\>"},
+                    {"ID", "10"},
+                    {"Rule", "Assumption"}
+                    },
+                    AutoDelete->False,
+                    GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Grid"]},
+                    {
+                    TagBox[GridBox[{
+                    {
+                    "Goal", "\<\"p \[Divides] m ^ n.succ \[RightArrow] p \
+\[Divides] m\"\>"},
+                    {"ID", "16"},
+                    {"Rule", "\<\"\[ForAll]I\"\>"},
+                    {"Proofs", 
+                    TagBox[
+                    DynamicModuleBox[{Typeset`var$$ = False}, 
+                    InterpretationBox[
+                    StyleBox[
+                    PaneSelectorBox[{False->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}},
+                    GridBoxSpacings->{"Columns" -> {{0.2}}, "Rows" -> {{
+                    0.5}}}], True->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"},
+                    {"", 
+                    PaneBox[
+                    TagBox[GridBox[{
+                    {
+                    TagBox[GridBox[{
+                    {"Goal", "\<\"h : p \[Divides] m ^ n.succ\"\>"},
+                    {"ID", "11"},
+                    {"Rule", "Assumption"}
+                    },
+                    AutoDelete->False,
+                    GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Grid"]},
+                    {
+                    TagBox[GridBox[{
+                    {"Goal", "\<\"p \[Divides] m\"\>"},
+                    {"ID", "15"},
+                    {"Rule", "\<\"or.elim\"\>"},
+                    {"Proofs", 
+                    TagBox[
+                    DynamicModuleBox[{Typeset`var$$ = False}, 
+                    InterpretationBox[
+                    StyleBox[
+                    PaneSelectorBox[{False->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}},
+                    GridBoxSpacings->{"Columns" -> {{0.2}}, 
+                    "Rows" -> {{0.5}}}], True->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"},
+                    {"", 
+                    PaneBox[
+                    TagBox[GridBox[{
+                    {
+                    TagBox[GridBox[{
+                    {
+                    "Goal", "\<\"p \[Divides] m \[Or] p \[Divides] monoid.pow \
+m n\"\>"},
+                    {"ID", "13"},
+                    {"Rule", "\<\"iff.mp\"\>"},
+                    {"Proofs", 
+                    TagBox[
+                    DynamicModuleBox[{Typeset`var$$ = False}, 
+                    InterpretationBox[
+                    StyleBox[
+                    PaneSelectorBox[{False->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}},
+                    GridBoxSpacings->{"Columns" -> {{0.2}}, 
+                    "Rows" -> {{0.5}}}], True->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"},
+                    {"", 
+                    PaneBox[
+                    TagBox[GridBox[{
+                    {
+                    TagBox[GridBox[{
+                    {
+                    "Goal", "\<\"p \[Divides] m * monoid.pow m n \
+\[LeftRightArrow] p \[Divides] m \[Or] p \[Divides] monoid.pow m n\"\>"},
+                    {"ID", "12"},
+                    {"Rule", "\<\"nat.prime.dvd_mul\"\>"},
+                    {"Proofs", 
+                    TagBox[
+                    DynamicModuleBox[{Typeset`var$$ = False}, 
+                    InterpretationBox[
+                    StyleBox[
+                    PaneSelectorBox[{False->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}},
+                    GridBoxSpacings->{"Columns" -> {{0.2}}, 
+                    "Rows" -> {{0.5}}}], True->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"},
+                    {"", 
+                    PaneBox[
+                    TagBox[GridBox[{
+                    {
+                    TagBox[GridBox[{
+                    {"Goal", "\<\"pp : nat.prime p\"\>"},
+                    {"ID", "3"},
+                    {"Rule", "Assumption"}
+                    },
+                    AutoDelete->False,
+                    GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Grid"]}
+                    },
+                    DefaultBaseStyle->"Column",
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Column"],
+                    ImageMargins->0]}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}},
+                    GridBoxSpacings->{"Columns" -> {{0.2}}, "Rows" -> {{
+                    0.5}}}]}, Dynamic[
+                    TrueQ[Typeset`var$$]],
+                    Alignment->Automatic,
+                    BaseStyle->{},
+                    BaselinePosition->Baseline,
+                    DefaultBaseStyle->"OpenerView",
+                    ImageMargins->0,
+                    ImageSize->Automatic],
+                    Deployed->False,
+                    StripOnInput->False],
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "pp : nat.prime p"}, {$CellContext`ID, 
+                    3}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}, False]],
+                    DynamicModuleValues:>Automatic],
+                    Setting[#, {0}]& ]}
+                    },
+                    AutoDelete->False,
+                    GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Grid"]},
+                    {
+                    TagBox[GridBox[{
+                    {"Goal", "\<\"h : p \[Divides] m ^ n.succ\"\>"},
+                    {"ID", "11"},
+                    {"Rule", "Assumption"}
+                    },
+                    AutoDelete->False,
+                    GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Grid"]}
+                    },
+                    DefaultBaseStyle->"Column",
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Column"],
+                    ImageMargins->0]}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}},
+                    GridBoxSpacings->{"Columns" -> {{0.2}}, 
+                    "Rows" -> {{0.5}}}]}, Dynamic[
+                    TrueQ[Typeset`var$$]],
+                    Alignment->Automatic,
+                    BaseStyle->{},
+                    BaselinePosition->Baseline,
+                    DefaultBaseStyle->"OpenerView",
+                    ImageMargins->0,
+                    ImageSize->Automatic],
+                    Deployed->False,
+                    StripOnInput->False],
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m * monoid.pow m n \[LeftRightArrow] p \
+\[Divides] m \[Or] p \[Divides] monoid.pow m n"}, {$CellContext`ID, 
+                    12}, {Rule, "nat.prime.dvd_mul"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "pp : nat.prime p"}, {$CellContext`ID, 
+                    3}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n.succ"}, {$CellContext`ID, 
+                    11}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}, False]],
+                    DynamicModuleValues:>Automatic],
+                    Setting[#, {0}]& ]}
+                    },
+                    AutoDelete->False,
+                    GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Grid"]},
+                    {
+                    TagBox[GridBox[{
+                    {
+                    "Goal", "\<\"p \[Divides] m \[RightArrow] p \[Divides] \
+m\"\>"},
+                    {"ID", "14"},
+                    {"Rule", "\<\"id\"\>"},
+                    {"Proofs", 
+                    TagBox[
+                    DynamicModuleBox[{Typeset`var$$ = False}, 
+                    InterpretationBox[
+                    StyleBox[
+                    PaneSelectorBox[{False->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}},
+                    GridBoxSpacings->{"Columns" -> {{0.2}}, 
+                    "Rows" -> {{0.5}}}], True->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], "Arguments"},
+                    {"", 
+                    PaneBox[
+                    InterpretationBox[
+                    TagBox[GridBox[{
+                    {""}
+                    },
+                    DefaultBaseStyle->"Column",
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Column"],
+                    Column[{}]],
+                    ImageMargins->0]}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}},
+                    GridBoxSpacings->{"Columns" -> {{0.2}}, 
+                    "Rows" -> {{0.5}}}]}, Dynamic[
+                    TrueQ[Typeset`var$$]],
+                    Alignment->Automatic,
+                    BaseStyle->{},
+                    BaselinePosition->Baseline,
+                    DefaultBaseStyle->"OpenerView",
+                    ImageMargins->0,
+                    ImageSize->Automatic],
+                    Deployed->False,
+                    StripOnInput->False],
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{}]}, False]],
+                    DynamicModuleValues:>Automatic],
+                    Setting[#, {0}]& ]}
+                    },
+                    AutoDelete->False,
+                    GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Grid"]},
+                    {
+                    TagBox[GridBox[{
+                    {
+                    "Goal", "\<\"IH : p \[Divides] m ^ n \[RightArrow] p \
+\[Divides] m\"\>"},
+                    {"ID", "10"},
+                    {"Rule", "Assumption"}
+                    },
+                    AutoDelete->False,
+                    GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Grid"]}
+                    },
+                    DefaultBaseStyle->"Column",
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Column"],
+                    ImageMargins->0]}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}},
+                    GridBoxSpacings->{
+                    "Columns" -> {{0.2}}, "Rows" -> {{0.5}}}]}, Dynamic[
+                    TrueQ[Typeset`var$$]],
+                    Alignment->Automatic,
+                    BaseStyle->{},
+                    BaselinePosition->Baseline,
+                    DefaultBaseStyle->"OpenerView",
+                    ImageMargins->0,
+                    ImageSize->Automatic],
+                    Deployed->False,
+                    StripOnInput->False],
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m \[Or] p \[Divides] monoid.pow m n"}, \
+{$CellContext`ID, 13}, {Rule, "iff.mp"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m * monoid.pow m n \[LeftRightArrow] p \
+\[Divides] m \[Or] p \[Divides] monoid.pow m n"}, {$CellContext`ID, 
+                    12}, {Rule, "nat.prime.dvd_mul"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "pp : nat.prime p"}, {$CellContext`ID, 
+                    3}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n.succ"}, {$CellContext`ID, 
+                    11}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 14}, {Rule, "id"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{}]}]}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "IH : p \[Divides] m ^ n \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 10}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}, False]],
+                    DynamicModuleValues:>Automatic],
+                    Setting[#, {0}]& ]}
+                    },
+                    AutoDelete->False,
+                    GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{
+                    Automatic}}}],
+                    "Grid"]}
+                    },
+                    DefaultBaseStyle->"Column",
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{
+                    Automatic}}}],
+                    "Column"],
+                    ImageMargins->0]}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}},
+                    
+                    GridBoxSpacings->{"Columns" -> {{0.2}}, "Rows" -> {{
+                    0.5}}}]}, Dynamic[
+                    TrueQ[Typeset`var$$]],
+                    Alignment->Automatic,
+                    BaseStyle->{},
+                    BaselinePosition->Baseline,
+                    DefaultBaseStyle->"OpenerView",
+                    ImageMargins->0,
+                    ImageSize->Automatic],
+                    Deployed->False,
+                    StripOnInput->False],
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n.succ"}, {$CellContext`ID, 11}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m"}, {$CellContext`ID, 15}, {Rule, 
+                    "or.elim"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m \[Or] p \[Divides] monoid.pow m n"}, \
+{$CellContext`ID, 13}, {Rule, "iff.mp"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m * monoid.pow m n \[LeftRightArrow] p \
+\[Divides] m \[Or] p \[Divides] monoid.pow m n"}, {$CellContext`ID, 
+                    12}, {Rule, "nat.prime.dvd_mul"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    Grid[{{$CellContext`Goal, 
+                    "pp : nat.prime p"}, {$CellContext`ID, 
+                    3}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n.succ"}, {$CellContext`ID, 
+                    11}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 14}, {Rule, "id"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{}]}]}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "IH : p \[Divides] m ^ n \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 10}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}, False]],
+                    DynamicModuleValues:>Automatic],
+                    Setting[#, {0}]& ]}
+                    },
+                    AutoDelete->False,
+                    GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Grid"]}
+                    },
+                    DefaultBaseStyle->"Column",
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}],
+                    "Column"],
+                    ImageMargins->0]}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}},
+                    
+                    GridBoxSpacings->{"Columns" -> {{0.2}}, 
+                    "Rows" -> {{0.5}}}]}, Dynamic[
+                    TrueQ[Typeset`var$$]],
+                    Alignment->Automatic,
+                    BaseStyle->{},
+                    BaselinePosition->Baseline,
+                    DefaultBaseStyle->"OpenerView",
+                    ImageMargins->0,
+                    ImageSize->Automatic],
+                    Deployed->False,
+                    StripOnInput->False],
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "IH : p \[Divides] m ^ n \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 10}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m ^ n.succ \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 16}, {Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n.succ"}, {$CellContext`ID, 11}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m"}, {$CellContext`ID, 15}, {
+                    Rule, "or.elim"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m \[Or] p \[Divides] monoid.pow m n"}, \
+{$CellContext`ID, 13}, {Rule, "iff.mp"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m * monoid.pow m n \[LeftRightArrow] p \
+\[Divides] m \[Or] p \[Divides] monoid.pow m n"}, {$CellContext`ID, 12}, {
+                    Rule, "nat.prime.dvd_mul"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "pp : nat.prime p"}, {$CellContext`ID, 
+                    3}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n.succ"}, {$CellContext`ID, 11}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 14}, {Rule, "id"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{}]}]}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "IH : p \[Divides] m ^ n \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 10}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}, False]],
+                    DynamicModuleValues:>Automatic],
+                    Setting[#, {0}]& ]}
+                    },
+                    AutoDelete->False,
+                    GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                    
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+                    "Grid"]}
+                    },
+                    DefaultBaseStyle->"Column",
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+                    "Column"],
+                    ImageMargins->0]}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                    
+                    GridBoxSpacings->{
+                    "Columns" -> {{0.2}}, "Rows" -> {{0.5}}}]}, Dynamic[
+                    TrueQ[Typeset`var$$]],
+                    Alignment->Automatic,
+                    BaseStyle->{},
+                    BaselinePosition->Baseline,
+                    DefaultBaseStyle->"OpenerView",
+                    ImageMargins->0,
+                    ImageSize->Automatic],
+                    Deployed->False,
+                    StripOnInput->False],
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "(p \[Divides] m ^ n \[RightArrow] p \[Divides] m) \
+\[RightArrow] p \[Divides] m ^ n.succ \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 17}, {Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "IH : p \[Divides] m ^ n \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 10}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m ^ n.succ \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 16}, {Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n.succ"}, {$CellContext`ID, 11}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m"}, {$CellContext`ID, 15}, {
+                    Rule, "or.elim"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m \[Or] p \[Divides] monoid.pow m n"}, \
+{$CellContext`ID, 13}, {Rule, "iff.mp"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m * monoid.pow m n \[LeftRightArrow] p \
+\[Divides] m \[Or] p \[Divides] monoid.pow m n"}, {$CellContext`ID, 12}, {
+                    Rule, "nat.prime.dvd_mul"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "pp : nat.prime p"}, {$CellContext`ID, 
+                    3}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n.succ"}, {$CellContext`ID, 11}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 14}, {Rule, "id"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{}]}]}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "IH : p \[Divides] m ^ n \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 10}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}, False]],
+                    DynamicModuleValues:>Automatic],
+                    Setting[#, {0}]& ]}
+                   },
+                   AutoDelete->False,
+                   GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                   
+                   GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+                  "Grid"]},
+                {
+                 TagBox[GridBox[{
+                    {"Goal", "\<\"h : p \[Divides] m ^ n\"\>"},
+                    {"ID", "4"},
+                    {"Rule", "Assumption"}
+                   },
+                   AutoDelete->False,
+                   GridBoxBackground->{"Columns" -> {
+                    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+                   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+                   
+                   GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+                  "Grid"]}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"],
+             ImageMargins->0]}
+          },
+          AutoDelete->False,
+          BaselinePosition->{1, 1},
+          GridBoxAlignment->{"Columns" -> {{Left}}},
+          GridBoxBackground->{"Columns" -> {{Automatic}}},
+          
+          GridBoxItemSize->{
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+          GridBoxSpacings->{"Columns" -> {{0.2}}, "Rows" -> {{0.5}}}]}, 
+         Dynamic[
+          TrueQ[Typeset`var$$]],
+         Alignment->Automatic,
+         BaseStyle->{},
+         BaselinePosition->Baseline,
+         DefaultBaseStyle->"OpenerView",
+         ImageMargins->0,
+         ImageSize->Automatic],
+        Deployed->False,
+        StripOnInput->False],
+       OpenerView[{$CellContext`Arguments, 
+         Column[{
+           
+           Grid[{{$CellContext`Goal, 
+              "p \[Divides] m ^ 0 \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 8}, {Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+              OpenerView[{$CellContext`Arguments, 
+                Column[{
+                  
+                  Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ 0"}, {$CellContext`ID, 5}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                  
+                  Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m"}, {$CellContext`ID, 7}, {
+                    Rule, "not.elim"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "\[Not]p \[Divides] 1"}, {$CellContext`ID, 6}, {
+                    Rule, "nat.prime.not_dvd_one"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "pp : nat.prime p"}, {$CellContext`ID, 3}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ 0"}, {$CellContext`ID, 5}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                   Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+            Background -> {{
+               RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+           
+           Grid[{{$CellContext`Goal, 
+              "\[ForAll] (n : \:2115), (p \[Divides] m ^ n \[RightArrow] p \
+\[Divides] m) \[RightArrow] p \[Divides] m ^ n.succ \[RightArrow] p \
+\[Divides] m"}, {$CellContext`ID, 18}, {
+             Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+              OpenerView[{$CellContext`Arguments, 
+                Column[{
+                  
+                  Grid[{{$CellContext`Goal, 
+                    "(p \[Divides] m ^ n \[RightArrow] p \[Divides] m) \
+\[RightArrow] p \[Divides] m ^ n.succ \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 17}, {Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "IH : p \[Divides] m ^ n \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 10}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m ^ n.succ \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 16}, {Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n.succ"}, {$CellContext`ID, 11}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m"}, {$CellContext`ID, 15}, {
+                    Rule, "or.elim"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m \[Or] p \[Divides] monoid.pow m n"}, \
+{$CellContext`ID, 13}, {Rule, "iff.mp"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m * monoid.pow m n \[LeftRightArrow] p \
+\[Divides] m \[Or] p \[Divides] monoid.pow m n"}, {$CellContext`ID, 12}, {
+                    Rule, "nat.prime.dvd_mul"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "pp : nat.prime p"}, {$CellContext`ID, 3}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n.succ"}, {$CellContext`ID, 11}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 14}, {Rule, "id"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{}]}]}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "IH : p \[Divides] m ^ n \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 10}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                   Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+            Background -> {{
+               RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+           
+           Grid[{{$CellContext`Goal, 
+              "h : p \[Divides] m ^ n"}, {$CellContext`ID, 4}, {
+             Rule, $CellContext`Assumption}}, Background -> {{
+               RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}, False]],
+      DynamicModuleValues:>Automatic],
+     Setting[#, {0}]& ]}
+  },
+  AutoDelete->False,
+  GridBoxBackground->{"Columns" -> {
+      RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+  GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+  GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+ "Grid"]}
+},
+DefaultBaseStyle->"Column",
+GridBoxAlignment->{"Columns" -> {{Left}}},
+GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+"Column"],
+ImageMargins->0]}
+},
+AutoDelete->False,
+BaselinePosition->{1, 1},
+GridBoxAlignment->{"Columns" -> {{Left}}},
+GridBoxBackground->{"Columns" -> {{Automatic}}},
+GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+GridBoxSpacings->{"Columns" -> {{0.2}}, "Rows" -> {{0.5}}}]}, Dynamic[
+ TrueQ[Typeset`var$$]],
+Alignment->Automatic,
+BaseStyle->{},
+BaselinePosition->Baseline,
+DefaultBaseStyle->"OpenerView",
+ImageMargins->0,
+ImageSize->Automatic],
+Deployed->False,
+StripOnInput->False],
+OpenerView[{$CellContext`Arguments, 
+  Column[{
+    Grid[{{$CellContext`Goal, "h : p \[Divides] m ^ n"}, {$CellContext`ID, 
+       4}, {Rule, $CellContext`Assumption}}, Background -> {{
+        RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+    Grid[{{$CellContext`Goal, "p \[Divides] m"}, {$CellContext`ID, 19}, {
+      Rule, "nat.rec"}, {$CellContext`Proofs, 
+       OpenerView[{$CellContext`Arguments, 
+         Column[{
+           
+           Grid[{{$CellContext`Goal, 
+              "p \[Divides] m ^ 0 \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 8}, {Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+              OpenerView[{$CellContext`Arguments, 
+                Column[{
+                  
+                  Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ 0"}, {$CellContext`ID, 5}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                  
+                  Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m"}, {$CellContext`ID, 7}, {
+                    Rule, "not.elim"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "\[Not]p \[Divides] 1"}, {$CellContext`ID, 6}, {
+                    Rule, "nat.prime.not_dvd_one"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "pp : nat.prime p"}, {$CellContext`ID, 3}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ 0"}, {$CellContext`ID, 5}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                   Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+            Background -> {{
+               RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+           
+           Grid[{{$CellContext`Goal, 
+              "\[ForAll] (n : \:2115), (p \[Divides] m ^ n \[RightArrow] p \
+\[Divides] m) \[RightArrow] p \[Divides] m ^ n.succ \[RightArrow] p \
+\[Divides] m"}, {$CellContext`ID, 18}, {
+             Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+              OpenerView[{$CellContext`Arguments, 
+                Column[{
+                  
+                  Grid[{{$CellContext`Goal, 
+                    "(p \[Divides] m ^ n \[RightArrow] p \[Divides] m) \
+\[RightArrow] p \[Divides] m ^ n.succ \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 17}, {Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "IH : p \[Divides] m ^ n \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 10}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m ^ n.succ \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 16}, {Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n.succ"}, {$CellContext`ID, 11}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m"}, {$CellContext`ID, 15}, {
+                    Rule, "or.elim"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m \[Or] p \[Divides] monoid.pow m n"}, \
+{$CellContext`ID, 13}, {Rule, "iff.mp"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m * monoid.pow m n \[LeftRightArrow] p \
+\[Divides] m \[Or] p \[Divides] monoid.pow m n"}, {$CellContext`ID, 12}, {
+                    Rule, "nat.prime.dvd_mul"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "pp : nat.prime p"}, {$CellContext`ID, 3}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n.succ"}, {$CellContext`ID, 11}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 14}, {Rule, "id"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{}]}]}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "IH : p \[Divides] m ^ n \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 10}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                   Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+            Background -> {{
+               RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+           
+           Grid[{{$CellContext`Goal, 
+              "h : p \[Divides] m ^ n"}, {$CellContext`ID, 4}, {
+             Rule, $CellContext`Assumption}}, Background -> {{
+               RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+     Background -> {{
+        RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}, False]],
+DynamicModuleValues:>Automatic],
+Setting[#, {0}]& ]}
+},
+AutoDelete->False,
+GridBoxBackground->{"Columns" -> {
+    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+"Grid"]}
+},
+DefaultBaseStyle->"Column",
+GridBoxAlignment->{"Columns" -> {{Left}}},
+GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+"Column"],
+ImageMargins->0]}
+},
+AutoDelete->False,
+BaselinePosition->{1, 1},
+GridBoxAlignment->{"Columns" -> {{Left}}},
+GridBoxBackground->{"Columns" -> {{Automatic}}},
+GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+GridBoxSpacings->{"Columns" -> {{0.2}}, "Rows" -> {{0.5}}}]}, Dynamic[
+ TrueQ[Typeset`var$$]],
+Alignment->Automatic,
+BaseStyle->{},
+BaselinePosition->Baseline,
+DefaultBaseStyle->"OpenerView",
+ImageMargins->0,
+ImageSize->Automatic],
+Deployed->False,
+StripOnInput->False],
+OpenerView[{$CellContext`Arguments, 
+  Column[{
+    Grid[{{$CellContext`Goal, "pp : nat.prime p"}, {$CellContext`ID, 3}, {
+      Rule, $CellContext`Assumption}}, Background -> {{
+        RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+    Grid[{{$CellContext`Goal, 
+       "p \[Divides] m ^ n \[RightArrow] p \[Divides] m"}, {$CellContext`ID, 
+       20}, {Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+       OpenerView[{$CellContext`Arguments, 
+         Column[{
+           
+           Grid[{{$CellContext`Goal, 
+              "h : p \[Divides] m ^ n"}, {$CellContext`ID, 4}, {
+             Rule, $CellContext`Assumption}}, Background -> {{
+               RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+           
+           Grid[{{$CellContext`Goal, "p \[Divides] m"}, {$CellContext`ID, 
+              19}, {Rule, "nat.rec"}, {$CellContext`Proofs, 
+              OpenerView[{$CellContext`Arguments, 
+                Column[{
+                  
+                  Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m ^ 0 \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 8}, {Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ 0"}, {$CellContext`ID, 5}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m"}, {$CellContext`ID, 7}, {
+                    Rule, "not.elim"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "\[Not]p \[Divides] 1"}, {$CellContext`ID, 6}, {
+                    Rule, "nat.prime.not_dvd_one"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "pp : nat.prime p"}, {$CellContext`ID, 3}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ 0"}, {$CellContext`ID, 5}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                   Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                  
+                  Grid[{{$CellContext`Goal, 
+                    "\[ForAll] (n : \:2115), (p \[Divides] m ^ n \
+\[RightArrow] p \[Divides] m) \[RightArrow] p \[Divides] m ^ n.succ \
+\[RightArrow] p \[Divides] m"}, {$CellContext`ID, 18}, {
+                    Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "(p \[Divides] m ^ n \[RightArrow] p \[Divides] m) \
+\[RightArrow] p \[Divides] m ^ n.succ \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 17}, {Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "IH : p \[Divides] m ^ n \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 10}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m ^ n.succ \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 16}, {Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n.succ"}, {$CellContext`ID, 11}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m"}, {$CellContext`ID, 15}, {
+                    Rule, "or.elim"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m \[Or] p \[Divides] monoid.pow m n"}, \
+{$CellContext`ID, 13}, {Rule, "iff.mp"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m * monoid.pow m n \[LeftRightArrow] p \
+\[Divides] m \[Or] p \[Divides] monoid.pow m n"}, {$CellContext`ID, 12}, {
+                    Rule, "nat.prime.dvd_mul"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "pp : nat.prime p"}, {$CellContext`ID, 3}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n.succ"}, {$CellContext`ID, 11}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 14}, {Rule, "id"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{}]}]}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "IH : p \[Divides] m ^ n \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 10}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                   Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                  
+                  Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n"}, {$CellContext`ID, 4}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+            Background -> {{
+               RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+     Background -> {{
+        RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}, False]],
+DynamicModuleValues:>Automatic],
+Setting[#, {0}]& ]}
+},
+AutoDelete->False,
+GridBoxBackground->{"Columns" -> {
+    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+"Grid"]}
+},
+DefaultBaseStyle->"Column",
+GridBoxAlignment->{"Columns" -> {{Left}}},
+GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+"Column"],
+ImageMargins->0]}
+},
+AutoDelete->False,
+BaselinePosition->{1, 1},
+GridBoxAlignment->{"Columns" -> {{Left}}},
+GridBoxBackground->{"Columns" -> {{Automatic}}},
+GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+GridBoxSpacings->{"Columns" -> {{0.2}}, "Rows" -> {{0.5}}}]}, Dynamic[
+ TrueQ[Typeset`var$$]],
+Alignment->Automatic,
+BaseStyle->{},
+BaselinePosition->Baseline,
+DefaultBaseStyle->"OpenerView",
+ImageMargins->0,
+ImageSize->Automatic],
+Deployed->False,
+StripOnInput->False],
+OpenerView[{$CellContext`Arguments, 
+  Column[{
+    Grid[{{$CellContext`Goal, "n : \:2115"}, {$CellContext`ID, 2}, {
+      Rule, $CellContext`Assumption}}, Background -> {{
+        RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+    Grid[{{$CellContext`Goal, 
+       "nat.prime p \[RightArrow] p \[Divides] m ^ n \[RightArrow] p \
+\[Divides] m"}, {$CellContext`ID, 21}, {
+      Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+       OpenerView[{$CellContext`Arguments, 
+         Column[{
+           
+           Grid[{{$CellContext`Goal, "pp : nat.prime p"}, {$CellContext`ID, 
+              3}, {Rule, $CellContext`Assumption}}, Background -> {{
+               RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+           
+           Grid[{{$CellContext`Goal, 
+              "p \[Divides] m ^ n \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 20}, {Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+              OpenerView[{$CellContext`Arguments, 
+                Column[{
+                  
+                  Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n"}, {$CellContext`ID, 4}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                  
+                  Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m"}, {$CellContext`ID, 19}, {
+                    Rule, "nat.rec"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m ^ 0 \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 8}, {Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ 0"}, {$CellContext`ID, 5}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m"}, {$CellContext`ID, 7}, {
+                    Rule, "not.elim"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "\[Not]p \[Divides] 1"}, {$CellContext`ID, 6}, {
+                    Rule, "nat.prime.not_dvd_one"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "pp : nat.prime p"}, {$CellContext`ID, 3}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ 0"}, {$CellContext`ID, 5}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "\[ForAll] (n : \:2115), (p \[Divides] m ^ n \
+\[RightArrow] p \[Divides] m) \[RightArrow] p \[Divides] m ^ n.succ \
+\[RightArrow] p \[Divides] m"}, {$CellContext`ID, 18}, {
+                    Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "(p \[Divides] m ^ n \[RightArrow] p \[Divides] m) \
+\[RightArrow] p \[Divides] m ^ n.succ \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 17}, {Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "IH : p \[Divides] m ^ n \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 10}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m ^ n.succ \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 16}, {Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n.succ"}, {$CellContext`ID, 11}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m"}, {$CellContext`ID, 15}, {
+                    Rule, "or.elim"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m \[Or] p \[Divides] monoid.pow m n"}, \
+{$CellContext`ID, 13}, {Rule, "iff.mp"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m * monoid.pow m n \[LeftRightArrow] p \
+\[Divides] m \[Or] p \[Divides] monoid.pow m n"}, {$CellContext`ID, 12}, {
+                    Rule, "nat.prime.dvd_mul"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "pp : nat.prime p"}, {$CellContext`ID, 
+                    3}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n.succ"}, {$CellContext`ID, 11}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 14}, {Rule, "id"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{}]}]}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "IH : p \[Divides] m ^ n \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 10}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n"}, {$CellContext`ID, 4}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                   Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+            Background -> {{
+               RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+     Background -> {{
+        RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}, False]],
+DynamicModuleValues:>Automatic],
+Setting[#, {0}]& ]}
+},
+AutoDelete->False,
+GridBoxBackground->{"Columns" -> {
+    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+"Grid"]}
+},
+DefaultBaseStyle->"Column",
+GridBoxAlignment->{"Columns" -> {{Left}}},
+GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+"Column"],
+ImageMargins->0]}
+},
+AutoDelete->False,
+BaselinePosition->{1, 1},
+GridBoxAlignment->{"Columns" -> {{Left}}},
+GridBoxBackground->{"Columns" -> {{Automatic}}},
+GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+GridBoxSpacings->{"Columns" -> {{0.2}}, "Rows" -> {{0.5}}}]}, Dynamic[
+ TrueQ[Typeset`var$$]],
+Alignment->Automatic,
+BaseStyle->{},
+BaselinePosition->Baseline,
+DefaultBaseStyle->"OpenerView",
+ImageMargins->0,
+ImageSize->Automatic],
+Deployed->False,
+StripOnInput->False],
+OpenerView[{$CellContext`Arguments, 
+  Column[{
+    Grid[{{$CellContext`Goal, "m : \:2115"}, {$CellContext`ID, 1}, {
+      Rule, $CellContext`Assumption}}, Background -> {{
+        RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+    Grid[{{$CellContext`Goal, 
+       "\[ForAll] {n : \:2115}, nat.prime p \[RightArrow] p \[Divides] m ^ n \
+\[RightArrow] p \[Divides] m"}, {$CellContext`ID, 22}, {
+      Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+       OpenerView[{$CellContext`Arguments, 
+         Column[{
+           
+           Grid[{{$CellContext`Goal, "n : \:2115"}, {$CellContext`ID, 2}, {
+             Rule, $CellContext`Assumption}}, Background -> {{
+               RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+           
+           Grid[{{$CellContext`Goal, 
+              "nat.prime p \[RightArrow] p \[Divides] m ^ n \[RightArrow] p \
+\[Divides] m"}, {$CellContext`ID, 21}, {
+             Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+              OpenerView[{$CellContext`Arguments, 
+                Column[{
+                  
+                  Grid[{{$CellContext`Goal, 
+                    "pp : nat.prime p"}, {$CellContext`ID, 3}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                  
+                  Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m ^ n \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 20}, {Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n"}, {$CellContext`ID, 4}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m"}, {$CellContext`ID, 19}, {
+                    Rule, "nat.rec"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m ^ 0 \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 8}, {Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ 0"}, {$CellContext`ID, 5}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m"}, {$CellContext`ID, 7}, {
+                    Rule, "not.elim"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "\[Not]p \[Divides] 1"}, {$CellContext`ID, 6}, {
+                    Rule, "nat.prime.not_dvd_one"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "pp : nat.prime p"}, {$CellContext`ID, 3}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ 0"}, {$CellContext`ID, 5}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "\[ForAll] (n : \:2115), (p \[Divides] m ^ n \
+\[RightArrow] p \[Divides] m) \[RightArrow] p \[Divides] m ^ n.succ \
+\[RightArrow] p \[Divides] m"}, {$CellContext`ID, 18}, {
+                    Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    
+                    "(p \[Divides] m ^ n \[RightArrow] p \[Divides] m) \
+\[RightArrow] p \[Divides] m ^ n.succ \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 17}, {Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "IH : p \[Divides] m ^ n \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 10}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m ^ n.succ \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 16}, {Rule, "\[ForAll]I"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n.succ"}, {$CellContext`ID, 11}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m"}, {$CellContext`ID, 15}, {
+                    Rule, "or.elim"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m \[Or] p \[Divides] monoid.pow m n"}, \
+{$CellContext`ID, 13}, {Rule, "iff.mp"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m * monoid.pow m n \[LeftRightArrow] p \
+\[Divides] m \[Or] p \[Divides] monoid.pow m n"}, {$CellContext`ID, 12}, {
+                    Rule, "nat.prime.dvd_mul"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "pp : nat.prime p"}, {$CellContext`ID, 
+                    3}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n.succ"}, {$CellContext`ID, 11}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "p \[Divides] m \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 14}, {Rule, "id"}, {$CellContext`Proofs, 
+                    OpenerView[{$CellContext`Arguments, 
+                    Column[{}]}]}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "IH : p \[Divides] m ^ n \[RightArrow] p \[Divides] m"}, \
+{$CellContext`ID, 10}, {Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All], 
+                    
+                    Grid[{{$CellContext`Goal, 
+                    "h : p \[Divides] m ^ n"}, {$CellContext`ID, 4}, {
+                    Rule, $CellContext`Assumption}}, Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                    Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+                   Background -> {{
+                    RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+            Background -> {{
+               RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}]}}, 
+     Background -> {{
+        RGBColor[0.87, 0.94, 1]}, None}, Frame -> All]}]}, False]],
+DynamicModuleValues:>{}],
+Setting[#, {0}]& ]}
+},
+AutoDelete->False,
+GridBoxBackground->{"Columns" -> {
+    RGBColor[0.87, 0.94, 1]}, "Rows" -> {{None}}},
+GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+"Grid"]}], "}"}]], "Output",
+ CellChangeTimes->{{3.899473339126915*^9, 3.8994733453551865`*^9}, {
+  3.8994734087748146`*^9, 3.8994734204942136`*^9}},
+ CellLabel->
+  "Out[127]=",ExpressionUUID->"d0efb431-8e5a-4755-871b-c285e3274472"]
+}, Open  ]],
+
+Cell[TextData[{
+ "In this case, ",
+ StyleBox["Cases[] ",
+  FontSlant->"Italic"],
+ "simply returns the input list, because all elements match. A more useful \
+application of cases might be:"
+}], "Text",
+ CellChangeTimes->{{3.8994734412326913`*^9, 3.899473455239729*^9}, {
+  3.8994735099263554`*^9, 
+  3.8994735427991295`*^9}},ExpressionUUID->"1a851575-37d5-4aa5-a710-\
+60ff60e21d8f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Cases", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\"\<here is a diverse list\>\"", ",", " ", 
+     RowBox[{"-", "2"}], ",", " ", "2.0", ",", " ", "0", ",", " ", 
+     RowBox[{"-", "0"}], ",", 
+     RowBox[{"-", "0.0"}], ",", " ", 
+     RowBox[{"-", "0.1"}]}], "}"}], ",", " ", 
+   RowBox[{"_", "?", "Negative"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.899473546996001*^9, 3.8994736033089857`*^9}},
+ CellLabel->
+  "In[129]:=",ExpressionUUID->"a4dc510c-055a-4afe-9191-e1a986d98362"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"-", "2"}], ",", 
+   RowBox[{"-", "0.1`"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.8994735915199394`*^9, 3.8994736038494396`*^9}},
+ CellLabel->
+  "Out[129]=",ExpressionUUID->"3acd618a-82f8-4e54-98bb-90c5a4e2d347"]
+}, Open  ]],
+
+Cell["\<\
+Here the negative-test (a predicate function, instead of a pattern) is \
+applied, where Negative[] returns true in the appropriate case and false (or \
+unevaluated, if the predicate is not applicable) in all others.\
+\>", "Text",
+ CellChangeTimes->{{3.899473637653205*^9, 3.89947367121185*^9}, {
+  3.8994738235723667`*^9, 
+  3.899473916114506*^9}},ExpressionUUID->"0719f33a-e15e-4771-83e9-\
+7d63fafafd67"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Negative", " ", "/@", " ", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"-", "2"}], ",", 
+    RowBox[{"-", "0.1"}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.8994736755370736`*^9, 3.899473702942342*^9}},
+ CellLabel->
+  "In[132]:=",ExpressionUUID->"313b4204-685d-43d8-8524-ef3da6829732"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"True", ",", "True"}], "}"}]], "Output",
+ CellChangeTimes->{3.899473690233275*^9, 3.8994737205500317`*^9},
+ CellLabel->
+  "Out[132]=",ExpressionUUID->"2bc2c2f8-c624-4606-bf38-3b014c096d8b"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-73c291d29211f232d201f3b2e1c2d4d63365da47a470002017fffe902e70402
-001300270023b10519b80247b20f2314b8014db21e520ab8014db1004f003fed3fed012fc4fd
-c4313001321e0215,
+Cell[BoxData[
+ RowBox[{"Negative", " ", "/@", " ", 
+  RowBox[{"{", 
+   RowBox[{
+   "\"\<here is a diverse list\>\"", ",", " ", "2.0", ",", " ", "0", ",", " ", 
+    RowBox[{"-", "0"}], ",", 
+    RowBox[{"-", "0.0"}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.8994738456406155`*^9, 3.899473850279687*^9}},
+ CellLabel->
+  "In[134]:=",ExpressionUUID->"7fb27546-177c-4662-8c90-2b68c436b2ad"],
 
-Cell[TextData[StyleBox["TODO FR",
- FontWeight->"Bold"]], "Text",
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"Negative", "[", "\<\"here is a diverse list\"\>", "]"}], ",", 
+   "False", ",", "False", ",", "False", ",", "False"}], "}"}]], "Output",
+ CellChangeTimes->{3.8994737375530825`*^9, 3.8994738550144105`*^9},
+ CellLabel->
+  "Out[134]=",ExpressionUUID->"867d3f9b-697c-4281-93fc-1540a41dc0e9"]
+}, Open  ]],
+
+Cell["\<\
+On the topic of predicates, pure functions can also be used to implement \
+them, here in combination with a test for the head of an element (testing if \
+it is a list).\
+\>", "Text",
+ CellChangeTimes->{{3.899473892513197*^9, 
+  3.8994739841832247`*^9}},ExpressionUUID->"04ccd279-ccb3-4c68-9c70-\
+667e2115a818"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MatchQ", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", "3"}], "}"}], ",", " ", 
+   RowBox[{"_List", "?", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Length", "[", "#", "]"}], ">", "2"}], "&"}], ")"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.89947399814575*^9, 3.899474036403205*^9}, {
+  3.899474073241499*^9, 3.8994741227758594`*^9}},
+ CellLabel->
+  "In[139]:=",ExpressionUUID->"2b083a49-762b-4d2f-822f-526efd39382e"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{
+  3.899474036825432*^9, {3.8994740691673956`*^9, 3.899474074633505*^9}, 
+   3.899474123072515*^9},
+ CellLabel->
+  "Out[139]=",ExpressionUUID->"798b4e45-07d0-4b4d-a54b-0e007376c303"]
+}, Open  ]],
+
+Cell["\<\
+Finally, the second of our functions does the same thing as the first, but \
+for an even more complex pattern (again using BlankSequences liberally).\
+\>", "Text",
+ CellChangeTimes->{{3.899474301289095*^9, 
+  3.8994743661573896`*^9}},ExpressionUUID->"ea3b5837-4198-4b53-9a67-\
+687c471908da"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"subproofs", "[", 
+    RowBox[{"Grid", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"___", ",", 
+        RowBox[{"{", 
+         RowBox[{"Proofs", ",", 
+          RowBox[{"OpenerView", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"Arguments", ",", 
+              RowBox[{"Column", "[", 
+               RowBox[{"subproofs_", ",", "___"}], "]"}]}], "}"}], ",", 
+            "___"}], "]"}]}], "}"}], ",", "___"}], "}"}], ",", "___"}], "]"}],
+     "]"}], ":=", "subproofs"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"subproofs", "[", "proof_", "]"}], ":=", 
+   RowBox[{"{", "}"}]}], ";"}]}], "Input",
+ CellLabel->
+  "In[140]:=",ExpressionUUID->"1d0866fb-87f2-4da6-a51c-7a3195509557"],
+
+Cell[TextData[{
+ "But with one caveat of a base case for a later recursion, in the form of an \
+overloaded function (",
+ StyleBox["subproofs[]",
+  FontSlant->"Italic"],
+ ") taking any possible pattern and binding it to the variable ",
+ StyleBox["proof",
+  FontSlant->"Italic"],
+ ", but returning an empty list as a fixed value: this leads to the final \
+topic to be discussed in this analysis, recursion."
+}], "Text",
+ CellChangeTimes->{{3.8994743855395203`*^9, 3.8994744330733185`*^9}, {
+  3.899474496706503*^9, 3.899474551426324*^9}, {3.899536127075162*^9, 
+  3.8995361483229055`*^9}},ExpressionUUID->"65d9f108-347b-4ced-a4ab-\
+f6effae09215"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Recursion", "Section",
+ CellChangeTimes->{{3.898929260844139*^9, 
+  3.898929264994703*^9}},ExpressionUUID->"5b1cf704-9cb7-4fbe-a850-\
+0602be74857a"],
+
+Cell["\<\
+We now but the functions together to explain the functionality in terms of \
+recursion, another paradigm implemented in Wolfram Language. This is the set \
+of functions we are considering:\
+\>", "Text",
  CellChangeTimes->{{3.898929268756711*^9, 3.8989292691132717`*^9}, {
-  3.899396703064071*^9, 
-  3.899396703726367*^9}},ExpressionUUID->"49952909-5b88-4116-8ca4-\
-c402bc7d9f48"]
+  3.899396703064071*^9, 3.899396703726367*^9}, {3.8994745710990086`*^9, 
+  3.899474623285108*^9}},ExpressionUUID->"49952909-5b88-4116-8ca4-\
+c402bc7d9f48"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"proofID", "[", 
+     RowBox[{"Grid", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"___", ",", 
+         RowBox[{"{", 
+          RowBox[{"ID", ",", "id_"}], "}"}], ",", "___"}], "}"}], ",", 
+       "___"}], "]"}], "]"}], ":=", "id"}], ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"basically", " ", "an", " ", "extractor"}], "-", "function"}], 
+    ",", " ", 
+    RowBox[{"using", " ", "patterns"}]}], " ", "*)"}], 
+  "\n"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"subproofs", "[", 
+     RowBox[{"Grid", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"___", ",", 
+         RowBox[{"{", 
+          RowBox[{"Proofs", ",", 
+           RowBox[{"OpenerView", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"Arguments", ",", 
+               RowBox[{"Column", "[", 
+                RowBox[{"subproofs_", ",", "___"}], "]"}]}], "}"}], ",", 
+             "___"}], "]"}]}], "}"}], ",", "___"}], "}"}], ",", "___"}], 
+      "]"}], "]"}], ":=", "subproofs"}], ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Same", " ", "as", " ", "above"}], ",", " ", 
+    RowBox[{
+    "but", " ", "with", " ", "more", " ", "complex", " ", "patterns"}]}], " ",
+    "*)"}]}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"subproofs", "[", "proof_", "]"}], ":=", 
+    RowBox[{"{", "}"}]}], ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Stopping", " ", "condition", " ", "preparing", " ", "the", " ", 
+    "recursion"}], " ", "*)"}], "\n"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"getLeanTree", "[", "proof_", "]"}], ":=", 
+  RowBox[{"Tree", "[", 
+   RowBox[{
+    RowBox[{"proofID", "[", "proof", "]"}], ",", 
+    RowBox[{"getLeanTree", "/@", 
+     RowBox[{"subproofs", "[", "proof", "]"}]}], ",", 
+    RowBox[{"TreeElementLabelStyle", "->", 
+     RowBox[{"All", "->", 
+      RowBox[{"Directive", "[", 
+       RowBox[{"White", ",", "16", ",", 
+        RowBox[{"FontFamily", "->", "\"\<Times New Roman\>\""}]}], "]"}]}]}], 
+    ",", 
+    RowBox[{"TreeElementStyle", "->", 
+     RowBox[{"All", "->", 
+      RowBox[{"Directive", "[", 
+       RowBox[{
+        RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
+        RowBox[{"RGBColor", "[", "\"\<#B6094A\>\"", "]"}]}], "]"}]}]}]}], 
+   "]"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Putting", " ", "it", " ", "all", " ", "together", " ", "now"}], 
+    ",", " ", 
+    RowBox[{
+    "plus", " ", "some", " ", "options", " ", "for", " ", "styling", " ", 
+     "the", " ", "output"}]}], " ", "*)"}]}]}], "Input",
+ CellChangeTimes->{{3.899391875338323*^9, 3.899391878129467*^9}, {
+  3.8994747353671036`*^9, 
+  3.899474846265001*^9}},ExpressionUUID->"ce9d4512-86ca-4b63-9eb8-\
+0f34fcc3afc0"],
+
+Cell[TextData[{
+ "One note on ",
+ StyleBox["Proofs ",
+  FontSlant->"Italic"],
+ "and ",
+ StyleBox["Arguments",
+  FontSlant->"Italic"],
+ ", these are simply the names of heads in the proof-grid-structure that is \
+the input for the main function, ",
+ StyleBox["getLeanTree[]",
+  FontSlant->"Italic"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.8994746556325865`*^9, 
+  3.8994747212843413`*^9}},ExpressionUUID->"b2ad5da0-d1cc-4fbd-bd39-\
+52b88d3ba6df"],
+
+Cell[TextData[{
+ "Recursion is of course a call of a function to itself, which is seen here \
+in ",
+ StyleBox["getLeanTree[]",
+  FontSlant->"Italic"],
+ ", as the function constructs a tree with an integer delivered by proofID as \
+the parent and the children as outputs from the recursive call mapped to the \
+proofs returned by ",
+ StyleBox["subproofs[]",
+  FontSlant->"Italic"],
+ ". Say two children are returned: the next recursion step makes a tree out \
+of the \[OpenCurlyDoubleQuote]child proofs\[CloseCurlyDoubleQuote] (the \
+\[OpenCurlyDoubleQuote]sub-proofs\[CloseCurlyDoubleQuote]) and again extracts \
+the ids and makes the recursive call, now implementing the branching of the \
+tree at the second level. "
+}], "Text",
+ CellChangeTimes->{{3.8994746302357545`*^9, 3.8994746326509023`*^9}, {
+   3.8995355018329954`*^9, 3.8995355186918488`*^9}, {3.8995355686882544`*^9, 
+   3.8995358032458615`*^9}, {3.8995359160252566`*^9, 3.8995359595985284`*^9}, 
+   3.899536004037975*^9},ExpressionUUID->"22d1e2e8-faf7-444d-9bc2-\
+1678dffc3b22"],
+
+Cell[TextData[{
+ "The fact that ",
+ StyleBox["subproofs[] i",
+  FontSlant->"Italic"],
+ "s is overloaded to produce an empty list when no relevant pattern is \
+present ensures that in the recursive mapping of ",
+ StyleBox["getLeanTree[] ",
+  FontSlant->"Italic"],
+ "eventually an empty list is mapped to:"
+}], "Text",
+ CellChangeTimes->{
+  3.899536008124158*^9},ExpressionUUID->"bafb993e-7f04-44dc-b03f-\
+8d8feac37b5c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Tree", "[", 
+  RowBox[{"\"\<id\>\"", ",", 
+   RowBox[{"{", "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8995359615598593`*^9, 3.899535988963725*^9}},
+ CellLabel->
+  "In[143]:=",ExpressionUUID->"208b8b06-2c15-4e31-82c8-2067a6ab9893"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["Trees",
+   DynamicModuleBox[{Typeset`tree = HoldComplete[
+     Tree["id", {}]]}, 
+    NamespaceBox[{{}, 
+      {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+       TagBox[InsetBox[
+         FrameBox["\<\"id\"\>",
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->4,
+          StripOnInput->False], {1., 1.}],
+        "DynamicName",
+        BoxID -> "VertexID$1"]}}]]],
+  AlignmentPoint->Center,
+  Axes->False,
+  AxesLabel->None,
+  AxesOrigin->Automatic,
+  AxesStyle->{},
+  Background->None,
+  BaseStyle->{},
+  BaselinePosition->Automatic,
+  ContentSelectable->Automatic,
+  DefaultBaseStyle->"TreeGraphics",
+  Epilog->{},
+  FormatType->StandardForm,
+  Frame->False,
+  FrameLabel->None,
+  FrameStyle->{},
+  FrameTicks->None,
+  FrameTicksStyle->{},
+  GridLines->None,
+  GridLinesStyle->{},
+  ImageMargins->0.,
+  ImagePadding->All,
+  ImageSize->{48.5, Automatic},
+  LabelStyle->{},
+  PlotLabel->None,
+  PlotRange->All,
+  PlotRangeClipping->False,
+  PlotRangePadding->0.1,
+  PlotRegion->Automatic,
+  Prolog->{},
+  RotateLabel->True,
+  Ticks->Automatic,
+  TicksStyle->{}]], "Output",
+ CellChangeTimes->{{3.899535968407363*^9, 3.8995359895279045`*^9}},
+ CellLabel->
+  "Out[143]=",ExpressionUUID->"612754a6-206b-471b-bacf-ca975c202a60"]
+}, Open  ]],
+
+Cell[TextData[{
+ "A leaf-node is reached, here corresponding to a mathematical axiom which in \
+turn does not depend on other axioms: The recursion stops, a base case is \
+reached in the sense that a tree with empty children is defined as a leaf, \
+though the actual empty list is returned not by the recursing function (",
+ StyleBox["getLeanTree[]",
+  FontSlant->"Italic"],
+ ") but by another (",
+ StyleBox["subproofs[]",
+  FontSlant->"Italic"],
+ ")."
+}], "Text",
+ CellChangeTimes->{{3.899536038248081*^9, 3.8995360963347864`*^9}, {
+  3.899536183503849*^9, 
+  3.89953624721049*^9}},ExpressionUUID->"57a412fe-7360-4803-a633-\
+3fdf19c0dd60"],
+
+Cell["\<\
+This section closes with a more canonical example of recursion with a direct \
+base case, the Fibonacci sequence, and an application to lists, showing how \
+lists are once again the essential auxiliary concept.\
+\>", "Text",
+ CellChangeTimes->{{3.899536280761682*^9, 
+  3.899536366807001*^9}},ExpressionUUID->"adf4f530-e059-4a09-9927-\
+913ee0d526b8"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"f", "[", "1", "]"}], " ", "=", " ", "1"}], ";"}], " ", 
+  RowBox[{"(*", " ", "Fibonacci", " ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", "2", "]"}], " ", "=", " ", "1"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"f", "[", "n_", "]"}], " ", ":=", " ", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"f", "[", 
+     RowBox[{"n", "-", "2"}], "]"}], "+", 
+    RowBox[{"f", "[", 
+     RowBox[{"n", "-", "1"}], "]"}]}], "/;", 
+   RowBox[{"n", ">", "2"}]}]}]}], "Input",
+ CellChangeTimes->{{3.8995365112289267`*^9, 3.899536662053522*^9}, {
+  3.8995366960314517`*^9, 3.899536714036729*^9}},
+ CellLabel->
+  "In[157]:=",ExpressionUUID->"32f36efd-b257-40b5-be6f-a4c7bf077d71"],
+
+Cell["\<\
+It turns out specific rules are looked up before more general rules, which is \
+helpful for implementing recursion, since we can omit the non-base condition \
+after simply defining the base cases.\
+\>", "Text",
+ CellChangeTimes->{{3.899536774198138*^9, 
+  3.8995368554482455`*^9}},ExpressionUUID->"35d01e62-f75a-4418-a371-\
+4c9af7777709"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "[", "n_", "]"}], " ", ":=", " ", 
+  RowBox[{
+   RowBox[{"f", "[", 
+    RowBox[{"n", "-", "2"}], "]"}], "+", 
+   RowBox[{"f", "[", 
+    RowBox[{"n", "-", "1"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.8995368662001696`*^9, 3.899536868762395*^9}},
+ CellLabel->
+  "In[163]:=",ExpressionUUID->"4f867ef0-a11e-435e-ade6-4da1cca1629e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"f", "[", "i", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "15"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.899536609724842*^9, 3.899536618338641*^9}, {
+  3.8995368866544824`*^9, 3.8995368900637264`*^9}},
+ CellLabel->
+  "In[164]:=",ExpressionUUID->"f4fb99ee-326b-4e29-957d-3489c89af5ca"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "1", ",", "2", ",", "3", ",", "5", ",", "8", ",", "13", ",", "21",
+    ",", "34", ",", "55", ",", "89", ",", "144", ",", "233", ",", "377", ",", 
+   "610"}], "}"}]], "Output",
+ CellChangeTimes->{3.899536890595969*^9},
+ CellLabel->
+  "Out[164]=",ExpressionUUID->"5b3da796-d2eb-496b-ba40-18537bf0dd09"]
+}, Open  ]],
+
+Cell["\<\
+The following helpful function lets us analyze what is being evaluated in \
+what order; this can be especially helpful when it comes to recursion, often \
+implementing many steps in relatively sparse syntax.\
+\>", "Text",
+ CellChangeTimes->{{3.8995370133945336`*^9, 
+  3.8995370881349325`*^9}},ExpressionUUID->"e6df5913-f545-46f8-8b9c-\
+fa6be123f06b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TracePrint", "[", 
+  RowBox[{"f", "[", "3", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.899536926170144*^9, 3.899536985830699*^9}},
+ CellLabel->
+  "In[169]:=",ExpressionUUID->"52bb33dd-d00a-4973-8222-88d2e132e5e2"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{" ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"f", "[", "3", "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[1], 
+   HoldForm[
+    $CellContext`f[3]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.8995369867118254`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"9728e366-7514-48dd-b4c7-d001957b0aa3"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"  ", "\[InvisibleSpace]", 
+   TagBox["f",
+    HoldForm]}],
+  SequenceForm[
+   Indent[2], 
+   HoldForm[$CellContext`f]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.8995369867198515`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"0cfd80da-a591-4484-9af7-1bd8762ea055"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"  ", "\[InvisibleSpace]", 
+   TagBox["3",
+    HoldForm]}],
+  SequenceForm[
+   Indent[2], 
+   HoldForm[3]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.899536986727853*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"cb381616-cc02-4a4d-8054-dc35c705c22c"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"  ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"RuleCondition", "[", 
+     RowBox[{
+      RowBox[{"$ConditionHold", "[", 
+       RowBox[{"$ConditionHold", "[", 
+        RowBox[{
+         RowBox[{"f", "[", 
+          RowBox[{"3", "-", "2"}], "]"}], "+", 
+         RowBox[{"f", "[", 
+          RowBox[{"3", "-", "1"}], "]"}]}], "]"}], "]"}], ",", 
+      RowBox[{"3", ">", "2"}]}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[2], 
+   HoldForm[
+    RuleCondition[
+     $ConditionHold[
+      $ConditionHold[$CellContext`f[3 - 2] + $CellContext`f[3 - 1]]], 3 > 2]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.899536986736007*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"3d086887-a2be-432c-911b-631e3a249d62"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"   ", "\[InvisibleSpace]", 
+   TagBox["RuleCondition",
+    HoldForm]}],
+  SequenceForm[
+   Indent[3], 
+   HoldForm[RuleCondition]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.8995369867450438`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"97dfa87a-4f84-4721-813e-1b07d035c0a3"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"   ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"3", ">", "2"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[3], 
+   HoldForm[3 > 2]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.8995369867450438`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"68b5326f-f9c2-4808-be90-ce8504f51b6f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox["Greater",
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[Greater]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.899536986752408*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"7e46ac1f-758e-4173-b943-036a4e72b34b"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox["3",
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[3]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.899536986752408*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"805d7980-0c75-4778-8b9b-9881e13088fd"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox["2",
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[2]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.899536986752408*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"27f65929-634d-49d1-8242-6fec5ee02163"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"   ", "\[InvisibleSpace]", 
+   TagBox["True",
+    HoldForm]}],
+  SequenceForm[
+   Indent[3], 
+   HoldForm[True]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.8995369867604227`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"56720cbc-056e-4258-998a-de55d4057925"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"  ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"RuleCondition", "[", 
+     RowBox[{
+      RowBox[{"$ConditionHold", "[", 
+       RowBox[{"$ConditionHold", "[", 
+        RowBox[{
+         RowBox[{"f", "[", 
+          RowBox[{"3", "-", "2"}], "]"}], "+", 
+         RowBox[{"f", "[", 
+          RowBox[{"3", "-", "1"}], "]"}]}], "]"}], "]"}], ",", "True"}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[2], 
+   HoldForm[
+    RuleCondition[
+     $ConditionHold[
+      $ConditionHold[$CellContext`f[3 - 2] + $CellContext`f[3 - 1]]], True]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.899536986768429*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"af35b83a-8668-4058-89bb-908ea7463720"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"  ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"$ConditionHold", "[", 
+     RowBox[{"$ConditionHold", "[", 
+      RowBox[{
+       RowBox[{"f", "[", 
+        RowBox[{"3", "-", "2"}], "]"}], "+", 
+       RowBox[{"f", "[", 
+        RowBox[{"3", "-", "1"}], "]"}]}], "]"}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[2], 
+   HoldForm[
+    $ConditionHold[
+     $ConditionHold[$CellContext`f[3 - 2] + $CellContext`f[3 - 1]]]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.899536986768429*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"4d1a2278-d3b0-47ae-9c18-02e575d70f33"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"   ", "\[InvisibleSpace]", 
+   TagBox["$ConditionHold",
+    HoldForm]}],
+  SequenceForm[
+   Indent[3], 
+   HoldForm[$ConditionHold]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.899536986776522*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"2167c450-2ad0-498c-93a8-71572abaef19"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{" ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{
+     RowBox[{"f", "[", 
+      RowBox[{"3", "-", "2"}], "]"}], "+", 
+     RowBox[{"f", "[", 
+      RowBox[{"3", "-", "1"}], "]"}]}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[1], 
+   HoldForm[$CellContext`f[3 - 2] + $CellContext`f[3 - 1]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.899536986776522*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"0d3aa662-8bff-4d4c-92cb-d6f3915112d2"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"  ", "\[InvisibleSpace]", 
+   TagBox["Plus",
+    HoldForm]}],
+  SequenceForm[
+   Indent[2], 
+   HoldForm[Plus]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.899536986776522*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"afcf7baa-9c2c-4b1b-a9bd-39193a9608c9"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"  ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"f", "[", 
+     RowBox[{"3", "-", "2"}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[2], 
+   HoldForm[
+    $CellContext`f[3 - 2]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.8995369867844324`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"2a7423e4-49a1-4c86-9898-1fa70de5bfd2"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"   ", "\[InvisibleSpace]", 
+   TagBox["f",
+    HoldForm]}],
+  SequenceForm[
+   Indent[3], 
+   HoldForm[$CellContext`f]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.8995369867844324`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"d5398355-bc51-4679-8154-3b0e5a25ee2f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"   ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"3", "-", "2"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[3], 
+   HoldForm[3 - 2]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.8995369867844324`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"2c9be216-c658-45c5-87a6-964b17701419"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox["Plus",
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[Plus]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.8995369868005524`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"91314082-ae2c-486c-b7f6-9540e6751a49"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox["3",
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[3]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.8995369868005524`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"698e82f9-4833-4e75-ac47-48774a207aef"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"-", "2"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[-2]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.89953698680508*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"a3cbe7df-9899-4fcc-b0a0-4e009ffa8314"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"   ", "\[InvisibleSpace]", 
+   TagBox["1",
+    HoldForm]}],
+  SequenceForm[
+   Indent[3], 
+   HoldForm[1]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.899536986808601*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"8e1c5056-bb1e-454e-8841-4e10d302db44"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"  ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"f", "[", "1", "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[2], 
+   HoldForm[
+    $CellContext`f[1]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.899536986808601*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"4c389eb4-1e07-4ae3-8598-87815eae5379"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"  ", "\[InvisibleSpace]", 
+   TagBox["1",
+    HoldForm]}],
+  SequenceForm[
+   Indent[2], 
+   HoldForm[1]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.8995369868166313`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"aab85840-8a46-4a42-92c6-dc73877a40d5"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"  ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"f", "[", 
+     RowBox[{"3", "-", "1"}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[2], 
+   HoldForm[
+    $CellContext`f[3 - 1]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.8995369868166313`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"d6f13050-f6e8-4aed-b4d0-be193fdd8083"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"   ", "\[InvisibleSpace]", 
+   TagBox["f",
+    HoldForm]}],
+  SequenceForm[
+   Indent[3], 
+   HoldForm[$CellContext`f]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.8995369868246517`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"199cb36d-71c0-44f8-af9a-db2164aa1ba5"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"   ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"3", "-", "1"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[3], 
+   HoldForm[3 - 1]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.8995369868246517`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"523378c5-4531-4e61-bbda-64497a1697e7"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox["Plus",
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[Plus]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.8995369868246517`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"6d3fcee7-2c10-4fc1-8373-110ba7a62388"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox["3",
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[3]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.8995369868326187`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"9df59dff-f2da-4295-969e-0a1cf0541129"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"-", "1"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[-1]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.899536986835813*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"2f584bcb-4056-46a1-b184-a6a4ae7bc77c"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"   ", "\[InvisibleSpace]", 
+   TagBox["2",
+    HoldForm]}],
+  SequenceForm[
+   Indent[3], 
+   HoldForm[2]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.899536986841113*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"c46b90c0-47f3-4b07-9876-04b9bb55eff6"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"  ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"f", "[", "2", "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[2], 
+   HoldForm[
+    $CellContext`f[2]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.899536986841113*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"0c7072ba-0142-400b-8e55-0ef7320f0687"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"  ", "\[InvisibleSpace]", 
+   TagBox["1",
+    HoldForm]}],
+  SequenceForm[
+   Indent[2], 
+   HoldForm[1]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.8995369868491273`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"cc98bc3a-c252-47e2-bd5c-ef5c14cee3fa"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{" ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"1", "+", "1"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[1], 
+   HoldForm[1 + 1]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.8995369868491273`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"79a14aba-7e58-47a3-9fc7-1b1576e7a515"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{" ", "\[InvisibleSpace]", 
+   TagBox["2",
+    HoldForm]}],
+  SequenceForm[
+   Indent[1], 
+   HoldForm[2]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.899536943413746*^9, 3.8995369868491273`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"bc754a11-da9b-4e86-8ac8-3d88d04c4da8"]
+}, Open  ]],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{{3.899536943883265*^9, 3.8995369868571777`*^9}},
+ CellLabel->
+  "Out[169]=",ExpressionUUID->"e58f9e5c-a6eb-4287-867b-2f164a98d15b"]
+}, Open  ]],
+
+Cell[TextData[{
+ "The final (simple!) list-recursion example echoes",
+ StyleBox[" getLeanTree[]",
+  FontSlant->"Italic"],
+ " in the way it requires an empty list base case and recursively folds into \
+itself."
+}], "Text",
+ CellChangeTimes->{{3.8995371279797044`*^9, 
+  3.8995372387680883`*^9}},ExpressionUUID->"c5e54c76-bf2f-49c6-9de5-\
+047facbf5bb9"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"l", "[", "list_", "]"}], " ", ":=", " ", 
+   RowBox[{
+    RowBox[{"l", "[", 
+     RowBox[{"Rest", "[", "list", "]"}], "]"}], " ", "+", " ", "1"}]}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+    "length", " ", "of", " ", "a", " ", "list", " ", "is", " ", "rest", " ", 
+     RowBox[{"(", "tail", ")"}]}], " ", "+", " ", "1"}], " ", 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"l", "[", 
+   RowBox[{"{", "}"}], "]"}], " ", ":=", " ", "0"}]}], "Input",
+ CellChangeTimes->{{3.899537245476598*^9, 3.8995373151720963`*^9}},
+ CellLabel->
+  "In[170]:=",ExpressionUUID->"6b9d6f9d-5cf5-42c6-a5d5-01c81212cb11"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"l", "[", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "2", ",", "3", ",", "4", ",", "5"}], "}"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8995373231947136`*^9, 3.8995373283598337`*^9}},
+ CellLabel->
+  "In[172]:=",ExpressionUUID->"7aa21122-5ffb-405f-bed4-b056de836d87"],
+
+Cell[BoxData["5"], "Output",
+ CellChangeTimes->{3.8995373291271744`*^9},
+ CellLabel->
+  "Out[172]=",ExpressionUUID->"156fae11-2b30-4ea4-9ea7-bdddeb3364c6"]
+}, Open  ]],
+
+Cell["\<\
+The observation here is that a simple problem can actually appear more \
+complex, simply because various paradigms and potentially some complex \
+patterns are being mixed at the same time.\
+\>", "Text",
+ CellChangeTimes->{{3.899537352300452*^9, 
+  3.8995374299598007`*^9}},ExpressionUUID->"b256c8db-8230-484e-8e91-\
+e06db4062225"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-00dffea002fe0402
-001b002f0027bc00210247002b0016024ab2000c26b8014db51c4f1100c61b002fedc43fed01
-2fc6edd4ed313017163e0235342e0435343e0233321e0215140e022301321e0215140e022322
-2e0235343e02df3c684d2c111a1d1a11162a3d27314e361c4487cc8801,
+Cell["Limitations and Summary", "Section",
+ CellChangeTimes->{{3.8989293086799808`*^9, 3.8989293101399717`*^9}, {
+  3.8989304615209646`*^9, 
+  3.8989304629051495`*^9}},ExpressionUUID->"aabc49ba-d10c-4a93-8776-\
+684025622aaa"],
 
-2301c1c304226
-2641311c1c3141c10212273c291d29211f232d201f3b2e1c2d4d63365da47a4705621c314225
-2642301c1c3042262542311c00000001009cffe903d1040e0031009bb10102435558b2221900
-bb0224000f0028021cb2081921b801024010002210220212032225f2280f051e5008ba013a00
-09ffc040090e1148090cf740055200183f1a4dfdd62bed3f123939fdd65f5e5ded012fc4edd4
-ed113931301bb9002101024010002210220212032225f2280f051e5008ba013a0009ffc04009
-0e1148090cf740055200183f1a4dfdd62bed3f123939fdd65f5e5ded31305901140e02232226
-2735161633323635342e02272e0335343e023332161715262623220615141e02171e0303d14d
-7fa15470b4505ebb53605f143764514b714a25386fa66f60943957994b4b5b12355f4e587849
-20012b577b4d231514dc27233d3117262325171535485f403e6e5330140cc71c173630172422
-25161939485c00010089ffe903db03f800170059b10102435558b10c0abb020b00070001020b
-b316174f04b8013140094011520c090a51094f00183f3f12393f1a4ded3f012fedd4ed333130
-1bb2174f04b8013140094011520c090a51094f00183f3f12393f1a4ded3f3130590111141633
-32363711331123270e0323222e023511017d3e3f3d713ff4d30620424d5b374e754e2703f8fd
-6a535565560283fc089627402d19335e835102aa00000002008bffee041d0585001300240053
-b10102435558b10b1dbb020b000800000217b2140819b8013140090f50095320fc4005520018
-3f1a4ded3f3fed012fd4ed10fdc431301bb90019013140090f50095320fc40055200183f1a4d
-ed3f3fed31305901140e022322262711331107363633321e020
+Cell["\<\
+This study did not cover numerics, graphics programming,  front-end \
+programming, or writing packages, all major topics related to the current \
+discussion: An Introduction to Programming with Mathematica (2005, Wellin et \
+al.) completes the picture at the intended overview level of analysis, of \
+exactly these missing topics. The focus here has been on one particular \
+example, solving one problem, in Wolfram Language; it is involved enough to \
+be viewed in context of the major themes chosen after introducing the \
+language in broad strokes. These themes were lists; functional programming; \
+rule-based programming as the particularly helpful approach in this \
+situation; and recursion, which we could not have easily done without.\
+\>", "Text",
+ CellChangeTimes->{{3.8989293261344185`*^9, 3.8989294516971064`*^9}, {
+  3.898929486562399*^9, 3.898929559818592*^9}, {3.898930394696986*^9, 
+  3.898930454340646*^9}, {3.8989304868870373`*^9, 3.8989306289334936`*^9}, {
+  3.898930663313635*^9, 3.898930665122369*^9}, {3.8993006066016164`*^9, 
+  3.899300630102814*^9}, {3.8993911377865047`*^9, 3.8993911435238733`*^9}, {
+  3.899392721129947*^9, 3.8993927781475616`*^9}, {3.8994750873998594`*^9, 
+  3.8994750924986563`*^9}, {3.8995374372288284`*^9, 3.8995374375316625`*^9}, {
+  3.8995374782183747`*^9, 
+  3.899537490296482*^9}},ExpressionUUID->"0ffbbea2-a558-4950-b17d-\
+98f468999b96"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -7312,25 +11001,33 @@ Cell["References", "Section",
   3.8989296967889905`*^9}},ExpressionUUID->"cb679f0e-e9e5-4fa2-a320-\
 c3f0335ab6e2"],
 
-558b10616bb01f7000800000200400e0f0816e106060815
-e1400941084300183f3f1a4ded12392fed012fd4ed10fdc431301b400c16e106060815e14009
-41084300183f3f1a4ded12392fed31305901140e02232311231121321e0205342e0223231133
-323e0204124486c8847df8017f7fc38545fefe21436646818940624323037b66ad7e46fe5c05
-1b376a9b7534553c20fe2123425c00020025ffe904410531000f001f004db10102435558bf00
-000202001000180202000800130117b20d421bb80117b240054400183f1a4ded3fed012fedd4
-ed31301bb900130117b20d421bb80117b240054400183f1a4ded3fed31305901140206062320
-00113412363633200001342623220e0215141633323e0204415391c36ffefefefc5391c36f01
-020104fefc7c8e4764411e7d8d4765401e0293b2fefea65001570147b20102a650feaafeace8
-e43b72a76ce8e43b72a7000000020066ffe90400040e002000290067b10102435558b30c0c17
-00b8020fb2212904b8020f40121721cd04042a26f31c500dfe0c09ff40125200183f1a4dfdd6
-ed3fed12392fed012fed32dded11392f31301b401121cd04042a26f31c500dfe0c09ff401252
-00183f1a4dfdd6ed3fed12392fed3130590114060721141e0233323637150e0323222e023534
-3e0233321e0207362e022322060704000303fd64294b69404aa95b275c60622e74b88044447c
-b16d6ca6703af8012037492a5c760b024a19502343664524171ac20b120e074281be7d7ccb91
-4f4378a6403c593a1c7b70000001008b000003dd040e0016005bb10102435558b10b06bb020b
-00080015020bb40008165103b8013140094010500b08094f085100183f3f12393f1a4ded3f01
-2fd4ed10ed3231301bb2165103b8013140094010500b08094f085100183f3f12393f1a4ded3f
-313059211134
+Cell[TextData[{
+ "Heseltine, J. (2023) ",
+ StyleBox["Empirical metamathematics: extending the Lean-to-Mathematica \
+bridge. ",
+  FontSlant->"Italic"],
+ "Wolfram Community. Available at: \
+https://community.wolfram.com/groups/-/m/t/2957419 (Accessed: 26 July 2023).",
+ "\nMangano, S. (2010) ",
+ StyleBox["Mathematica Cookbook. ",
+  FontSlant->"Italic"],
+ "Sebastopol, CA: O\[CloseCurlyQuote]Reilly Media, Inc.",
+ "\nWellin, P. R. (2005) ",
+ StyleBox["An Introduction to Programming in Mathematica. ",
+  FontSlant->"Italic"],
+ "Cambridge, UK: Cambridge University Press.\nWolfram Research (2023) Wolfram \
+Language & System Documentation Center. Available at: \
+https://reference.wolfram.com/language/ (Accessed: 23 July 2023)."
+}], "Text",
+ CellChangeTimes->{{3.8989301239500237`*^9, 3.898930127469351*^9}, {
+   3.8989301670544496`*^9, 3.898930168945137*^9}, {3.898930272869325*^9, 
+   3.8989303371902237`*^9}, 3.898930369411821*^9, {3.8991036209629145`*^9, 
+   3.8991036328924227`*^9}, {3.8991036850074425`*^9, 3.899103712564625*^9}, {
+   3.8991037749901505`*^9, 3.899103776132259*^9}, {3.8993009534152403`*^9, 
+   3.8993009743836713`*^9}, {3.8993010694675846`*^9, 3.89930109152083*^9}, {
+   3.899391192200072*^9, 3.89939122515313*^9}, {3.8993912674318*^9, 
+   3.8993913278387794`*^9}},ExpressionUUID->"6ba92103-54f0-4b90-b6f6-\
+2017b83919d5"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -7360,152 +11057,264 @@ Cell[2019, 52, 1942, 56, 219, "Input",ExpressionUUID->"3fc6da08-13aa-400e-bb92-9
 Cell[3964, 110, 782, 16, 104, "Text",ExpressionUUID->"c79ca2fc-beb0-483f-8755-7878ecea51fb"],
 Cell[CellGroupData[{
 Cell[4771, 130, 162, 3, 69, "Chapter",ExpressionUUID->"1139bdf8-149e-4d3d-81da-eb38fa788dd8"],
-Cell[4936, 135, 752, 12, 173, "Text",ExpressionUUID->"e22f44fa-5143-45b4-ba6f-f675825571d6"]
+Cell[4936, 135, 752, 12, 127, "Text",ExpressionUUID->"e22f44fa-5143-45b4-ba6f-f675825571d6"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[5725, 152, 169, 3, 69, "Chapter",ExpressionUUID->"c3d925d0-f1be-4b4b-bb09-18465abfc1df"],
-Cell[5897, 157, 966, 15, 196, "Text",ExpressionUUID->"00820163-b490-4547-9ce3-524d76d24e61"],
-Cell[6866, 174, 421, 8, 104, "Text",ExpressionUUID->"0813500e-5c56-4148-b21c-5c1850a08fef"],
+Cell[5897, 157, 966, 15, 173, "Text",ExpressionUUID->"00820163-b490-4547-9ce3-524d76d24e61"],
+Cell[6866, 174, 421, 8, 81, "Text",ExpressionUUID->"0813500e-5c56-4148-b21c-5c1850a08fef"],
 Cell[CellGroupData[{
 Cell[7312, 186, 217, 4, 67, "Section",ExpressionUUID->"288a154a-fb8b-45cc-a5f8-236052c6bb5e"],
 Cell[7532, 192, 313, 7, 58, "Text",ExpressionUUID->"7d1c0b6f-e258-406a-a9ac-74fb44dbddfa"],
 Cell[7848, 201, 446, 12, 28, "Input",ExpressionUUID->"2659c283-35c5-45fd-acfc-30b54ffc98e7"],
-Cell[8297, 215, 548, 11, 150, "Text",ExpressionUUID->"77746dc5-777d-49fa-8831-310190cd9c0b"],
+Cell[8297, 215, 643, 12, 150, "Text",ExpressionUUID->"77746dc5-777d-49fa-8831-310190cd9c0b"],
 Cell[CellGroupData[{
-Cell[8870, 230, 266, 5, 28, "Input",ExpressionUUID->"fee3d6df-450f-450e-9495-3c80d5e665e7"],
-Cell[9139, 237, 373, 11, 46, "Output",ExpressionUUID->"81aa46f8-297e-4591-910a-9b3ba42c3324"]
+Cell[8965, 231, 266, 5, 28, "Input",ExpressionUUID->"fee3d6df-450f-450e-9495-3c80d5e665e7"],
+Cell[9234, 238, 373, 11, 46, "Output",ExpressionUUID->"81aa46f8-297e-4591-910a-9b3ba42c3324"]
 }, Open  ]],
-Cell[9527, 251, 371, 8, 58, "Text",ExpressionUUID->"2313732a-4a4a-4d16-9f34-ba14d26d14b2"],
+Cell[9622, 252, 371, 8, 35, "Text",ExpressionUUID->"2313732a-4a4a-4d16-9f34-ba14d26d14b2"],
 Cell[CellGroupData[{
-Cell[9923, 263, 204, 3, 28, "Input",ExpressionUUID->"bbb40ee0-3fd3-4bd8-ac8f-fac1281764f0"],
-Cell[10130, 268, 229, 4, 32, "Output",ExpressionUUID->"c5562328-5b6b-49c5-9fe8-f86f69436b9b"]
+Cell[10018, 264, 204, 3, 28, "Input",ExpressionUUID->"bbb40ee0-3fd3-4bd8-ac8f-fac1281764f0"],
+Cell[10225, 269, 229, 4, 32, "Output",ExpressionUUID->"c5562328-5b6b-49c5-9fe8-f86f69436b9b"]
 }, Open  ]],
-Cell[10374, 275, 164, 3, 35, "Text",ExpressionUUID->"ed2ec935-8b10-47e1-ae77-9f2d63dbab96"],
+Cell[10469, 276, 164, 3, 35, "Text",ExpressionUUID->"ed2ec935-8b10-47e1-ae77-9f2d63dbab96"],
 Cell[CellGroupData[{
-Cell[10563, 282, 239, 4, 28, "Input",ExpressionUUID->"89283e6b-1774-4ec7-b97a-d17b2dd3f7e7"],
-Cell[10805, 288, 257, 5, 32, "Output",ExpressionUUID->"a129fd1d-1888-4ea1-a347-d74534dc7bb8"]
+Cell[10658, 283, 239, 4, 28, "Input",ExpressionUUID->"89283e6b-1774-4ec7-b97a-d17b2dd3f7e7"],
+Cell[10900, 289, 257, 5, 32, "Output",ExpressionUUID->"a129fd1d-1888-4ea1-a347-d74534dc7bb8"]
 }, Open  ]],
-Cell[11077, 296, 297, 8, 58, "Text",ExpressionUUID->"0d4e5721-941a-4079-8bcf-89ba7623312b"],
+Cell[11172, 297, 297, 8, 58, "Text",ExpressionUUID->"0d4e5721-941a-4079-8bcf-89ba7623312b"],
 Cell[CellGroupData[{
-Cell[11399, 308, 351, 8, 28, "Input",ExpressionUUID->"bfe3b192-836e-4b67-9d5c-28671369fdfc"],
-Cell[11753, 318, 282, 5, 32, "Output",ExpressionUUID->"28a07fa4-ce34-4fed-9ddd-0e996dc68950"]
+Cell[11494, 309, 351, 8, 28, "Input",ExpressionUUID->"bfe3b192-836e-4b67-9d5c-28671369fdfc"],
+Cell[11848, 319, 282, 5, 32, "Output",ExpressionUUID->"28a07fa4-ce34-4fed-9ddd-0e996dc68950"]
 }, Open  ]],
-Cell[12050, 326, 350, 12, 35, "Text",ExpressionUUID->"629eca9f-e502-437f-b8e5-edad18b41bf2"],
-Cell[12403, 340, 391, 9, 58, "Text",ExpressionUUID->"d6d4cfdf-1cfc-4db7-9d7c-4f0d8db79e2f"],
+Cell[12145, 327, 350, 12, 35, "Text",ExpressionUUID->"629eca9f-e502-437f-b8e5-edad18b41bf2"],
+Cell[12498, 341, 391, 9, 58, "Text",ExpressionUUID->"d6d4cfdf-1cfc-4db7-9d7c-4f0d8db79e2f"],
 Cell[CellGroupData[{
-Cell[12819, 353, 232, 4, 28, "Input",ExpressionUUID->"e0c94dfb-d7db-45c4-89f1-e9bfe3596e1e"],
-Cell[13054, 359, 415, 13, 97, "Output",ExpressionUUID->"4562e2fb-c75e-4da7-99e9-c31b15279c22"]
+Cell[12914, 354, 232, 4, 28, "Input",ExpressionUUID->"e0c94dfb-d7db-45c4-89f1-e9bfe3596e1e"],
+Cell[13149, 360, 415, 13, 97, "Output",ExpressionUUID->"4562e2fb-c75e-4da7-99e9-c31b15279c22"]
 }, Open  ]],
-Cell[13484, 375, 399, 8, 58, "Text",ExpressionUUID->"0b3c5451-3501-44bf-9577-1884b48f94a7"],
+Cell[13579, 376, 399, 8, 58, "Text",ExpressionUUID->"0b3c5451-3501-44bf-9577-1884b48f94a7"],
 Cell[CellGroupData[{
-Cell[13908, 387, 497, 12, 28, "Input",ExpressionUUID->"85c846ef-37b0-4a90-b164-d60907c92758"],
-Cell[14408, 401, 740, 21, 78, "Output",ExpressionUUID->"d84322a4-1786-47bb-a9fa-ccc45676a913"]
+Cell[14003, 388, 497, 12, 28, "Input",ExpressionUUID->"85c846ef-37b0-4a90-b164-d60907c92758"],
+Cell[14503, 402, 740, 21, 78, "Output",ExpressionUUID->"d84322a4-1786-47bb-a9fa-ccc45676a913"]
 }, Open  ]],
-Cell[15163, 425, 298, 7, 58, "Text",ExpressionUUID->"45710bc0-b5b6-43ac-a019-b6043eda031e"],
+Cell[15258, 426, 298, 7, 35, "Text",ExpressionUUID->"45710bc0-b5b6-43ac-a019-b6043eda031e"],
 Cell[CellGroupData[{
-Cell[15486, 436, 653, 16, 48, "Input",ExpressionUUID->"480f7487-9c44-4fd5-b410-bb57ac4b0ef3"],
-Cell[16142, 454, 730, 22, 95, "Output",ExpressionUUID->"a4a7e482-abae-4954-b77a-f5032158d286"]
+Cell[15581, 437, 653, 16, 28, "Input",ExpressionUUID->"480f7487-9c44-4fd5-b410-bb57ac4b0ef3"],
+Cell[16237, 455, 730, 22, 95, "Output",ExpressionUUID->"a4a7e482-abae-4954-b77a-f5032158d286"]
 }, Open  ]],
-Cell[16887, 479, 503, 9, 104, "Text",ExpressionUUID->"88bfea34-a3a0-4809-a65b-8f64ab3b7848"],
-Cell[17393, 490, 1325, 35, 242, "Text",ExpressionUUID->"e47364ed-ff85-47a1-9709-1cf82f97565e"],
+Cell[16982, 480, 503, 9, 81, "Text",ExpressionUUID->"88bfea34-a3a0-4809-a65b-8f64ab3b7848"],
+Cell[17488, 491, 1325, 35, 219, "Text",ExpressionUUID->"e47364ed-ff85-47a1-9709-1cf82f97565e"],
 Cell[CellGroupData[{
-Cell[18743, 529, 493, 13, 30, "Input",ExpressionUUID->"90b8ea8a-078a-424c-8d06-7f16a36f5368"],
-Cell[19239, 544, 1166, 38, 81, "Output",ExpressionUUID->"c0c892a0-c70d-4750-b867-8c3f4d4a927f"]
+Cell[18838, 530, 493, 13, 30, "Input",ExpressionUUID->"90b8ea8a-078a-424c-8d06-7f16a36f5368"],
+Cell[19334, 545, 1166, 38, 81, "Output",ExpressionUUID->"c0c892a0-c70d-4750-b867-8c3f4d4a927f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[20442, 587, 250, 5, 28, "Input",ExpressionUUID->"4140e9ce-ca9e-4322-842c-63264323bbc9"],
-Cell[20695, 594, 193, 4, 33, "Output",ExpressionUUID->"237e4862-fce7-4cf1-81e3-118fc63fcbf1"]
+Cell[20537, 588, 250, 5, 28, "Input",ExpressionUUID->"4140e9ce-ca9e-4322-842c-63264323bbc9"],
+Cell[20790, 595, 193, 4, 33, "Output",ExpressionUUID->"237e4862-fce7-4cf1-81e3-118fc63fcbf1"]
 }, Open  ]],
-Cell[20903, 601, 326, 10, 58, "Text",ExpressionUUID->"d2bc02ac-657c-4665-9ccb-529675eb7c81"],
-Cell[21232, 613, 918, 15, 173, "Text",ExpressionUUID->"2be271bf-1766-40cb-b66d-0b08643cf3d7"],
-Cell[22153, 630, 306, 7, 58, "Text",ExpressionUUID->"176ffc13-9058-4f9e-b181-7d030a4ef2a9"],
-Cell[22462, 639, 284, 6, 28, "Input",ExpressionUUID->"21b88fec-e5b4-44e8-88d2-b17cf3bd0a17"],
+Cell[20998, 602, 326, 10, 35, "Text",ExpressionUUID->"d2bc02ac-657c-4665-9ccb-529675eb7c81"],
+Cell[21327, 614, 918, 15, 150, "Text",ExpressionUUID->"2be271bf-1766-40cb-b66d-0b08643cf3d7"],
+Cell[22248, 631, 306, 7, 58, "Text",ExpressionUUID->"176ffc13-9058-4f9e-b181-7d030a4ef2a9"],
+Cell[22557, 640, 284, 6, 28, "Input",ExpressionUUID->"21b88fec-e5b4-44e8-88d2-b17cf3bd0a17"],
 Cell[CellGroupData[{
-Cell[22771, 649, 309, 7, 28, "Input",ExpressionUUID->"67b4077b-e78f-4ed2-933f-ad75a06d5493"],
-Cell[23083, 658, 218, 5, 32, "Output",ExpressionUUID->"b2700a0e-86f0-4b2c-ba55-04bde6231221"]
+Cell[22866, 650, 309, 7, 28, "Input",ExpressionUUID->"67b4077b-e78f-4ed2-933f-ad75a06d5493"],
+Cell[23178, 659, 218, 5, 32, "Output",ExpressionUUID->"b2700a0e-86f0-4b2c-ba55-04bde6231221"]
 }, Open  ]],
-Cell[23316, 666, 192, 3, 35, "Text",ExpressionUUID->"0e17ce5f-187c-4e0b-adc9-2be71b52bce9"],
-Cell[23511, 671, 278, 6, 28, "Input",ExpressionUUID->"75cf13b6-c1c6-42ca-82b4-73dca2643e57"],
+Cell[23411, 667, 192, 3, 35, "Text",ExpressionUUID->"0e17ce5f-187c-4e0b-adc9-2be71b52bce9"],
+Cell[23606, 672, 278, 6, 28, "Input",ExpressionUUID->"75cf13b6-c1c6-42ca-82b4-73dca2643e57"],
 Cell[CellGroupData[{
-Cell[23814, 681, 337, 8, 28, "Input",ExpressionUUID->"65c112ff-54ce-4868-8912-68545733f9e2"],
-Cell[24154, 691, 358, 9, 32, "Output",ExpressionUUID->"395ecbfe-7451-4602-94d9-1d73c4d72191"]
+Cell[23909, 682, 337, 8, 28, "Input",ExpressionUUID->"65c112ff-54ce-4868-8912-68545733f9e2"],
+Cell[24249, 692, 358, 9, 32, "Output",ExpressionUUID->"395ecbfe-7451-4602-94d9-1d73c4d72191"]
 }, Open  ]],
-Cell[24527, 703, 395, 8, 58, "Text",ExpressionUUID->"19ca73d4-70ba-4258-a6dd-570b336ec40a"],
-Cell[24925, 713, 254, 5, 28, "Input",ExpressionUUID->"8d39a0a9-00f5-4fd2-af6a-0653d2ca6055"],
+Cell[24622, 704, 395, 8, 58, "Text",ExpressionUUID->"19ca73d4-70ba-4258-a6dd-570b336ec40a"],
+Cell[25020, 714, 254, 5, 28, "Input",ExpressionUUID->"8d39a0a9-00f5-4fd2-af6a-0653d2ca6055"],
 Cell[CellGroupData[{
-Cell[25204, 722, 364, 8, 28, "Input",ExpressionUUID->"57497cb7-1ae5-416d-82e1-dd62263c858b"],
-Cell[25571, 732, 308, 7, 32, "Output",ExpressionUUID->"de3595a4-fe3f-4cc5-8931-c41632dfb3b7"]
+Cell[25299, 723, 364, 8, 28, "Input",ExpressionUUID->"57497cb7-1ae5-416d-82e1-dd62263c858b"],
+Cell[25666, 733, 308, 7, 32, "Output",ExpressionUUID->"de3595a4-fe3f-4cc5-8931-c41632dfb3b7"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[25928, 745, 222, 4, 67, "Section",ExpressionUUID->"2d81ac97-ab32-4622-8fd7-aef6a384f54a"],
-Cell[26153, 751, 1253, 21, 242, "Text",ExpressionUUID->"12eff140-df22-40e0-93cd-9f96eb5f013f"],
-Cell[27409, 774, 466, 9, 81, "Text",ExpressionUUID->"7ab05f99-2afa-4253-aa30-07e7f29483c3"],
+Cell[26023, 746, 222, 4, 67, "Section",ExpressionUUID->"2d81ac97-ab32-4622-8fd7-aef6a384f54a"],
+Cell[26248, 752, 1253, 21, 196, "Text",ExpressionUUID->"12eff140-df22-40e0-93cd-9f96eb5f013f"],
+Cell[27504, 775, 466, 9, 81, "Text",ExpressionUUID->"7ab05f99-2afa-4253-aa30-07e7f29483c3"],
 Cell[CellGroupData[{
-Cell[27900, 787, 2238, 52, 409, "Input",ExpressionUUID->"221e1245-2c73-4725-9dcf-4117e7292968"],
-Cell[30141, 841, 1657, 29, 187, "Output",ExpressionUUID->"5c6ed035-9a0b-46bd-b904-cb18d3debad8"]
+Cell[27995, 788, 2238, 52, 409, "Input",ExpressionUUID->"221e1245-2c73-4725-9dcf-4117e7292968"],
+Cell[30236, 842, 1657, 29, 416, "Output",ExpressionUUID->"5c6ed035-9a0b-46bd-b904-cb18d3debad8"]
 }, {2}]],
-Cell[31810, 873, 818, 13, 81, "Text",ExpressionUUID->"d5493b97-ce76-48b3-9318-d78f317b157b"],
-Cell[32631, 888, 305, 7, 28, "Input",ExpressionUUID->"de15373d-dfc6-43a2-b6ab-e91660d66312"],
-Cell[32939, 897, 297, 9, 35, "Text",ExpressionUUID->"b9de4002-c102-4010-bd60-ceb9e7b5e34d"],
+Cell[31905, 874, 818, 13, 150, "Text",ExpressionUUID->"d5493b97-ce76-48b3-9318-d78f317b157b"],
+Cell[32726, 889, 305, 7, 28, "Input",ExpressionUUID->"de15373d-dfc6-43a2-b6ab-e91660d66312"],
+Cell[33034, 898, 297, 9, 35, "Text",ExpressionUUID->"b9de4002-c102-4010-bd60-ceb9e7b5e34d"],
 Cell[CellGroupData[{
-Cell[33261, 910, 287, 6, 28, "Input",ExpressionUUID->"e8036e5c-5d28-43c5-b3c1-3a7811c7ed15"],
-Cell[33551, 918, 456, 13, 32, "Output",ExpressionUUID->"8c272bcb-775e-4a6b-8873-cc5b8c5dc19d"]
+Cell[33356, 911, 287, 6, 28, "Input",ExpressionUUID->"e8036e5c-5d28-43c5-b3c1-3a7811c7ed15"],
+Cell[33646, 919, 456, 13, 32, "Output",ExpressionUUID->"8c272bcb-775e-4a6b-8873-cc5b8c5dc19d"]
 }, Open  ]],
-Cell[34022, 934, 196, 3, 35, "Text",ExpressionUUID->"09621998-fc83-4fac-9406-6bdb05fd3b44"],
+Cell[34117, 935, 196, 3, 35, "Text",ExpressionUUID->"09621998-fc83-4fac-9406-6bdb05fd3b44"],
 Cell[CellGroupData[{
-Cell[34243, 941, 389, 10, 28, "Input",ExpressionUUID->"df57e72c-a7ed-4baf-9678-3c745731fe66"],
-Cell[34635, 953, 458, 13, 32, "Output",ExpressionUUID->"0d48a546-54d8-4655-8489-9e00c5e8e8ce"]
+Cell[34338, 942, 389, 10, 28, "Input",ExpressionUUID->"df57e72c-a7ed-4baf-9678-3c745731fe66"],
+Cell[34730, 954, 458, 13, 32, "Output",ExpressionUUID->"0d48a546-54d8-4655-8489-9e00c5e8e8ce"]
 }, Open  ]],
-Cell[35108, 969, 329, 7, 58, "Text",ExpressionUUID->"4c771090-7b52-430a-a821-1f930d25f864"],
+Cell[35203, 970, 329, 7, 58, "Text",ExpressionUUID->"4c771090-7b52-430a-a821-1f930d25f864"],
 Cell[CellGroupData[{
-Cell[35462, 980, 539, 13, 28, "Input",ExpressionUUID->"77cfd193-e0ca-478c-885d-de6454c0eac8"],
-Cell[36004, 995, 480, 13, 32, "Output",ExpressionUUID->"ed335999-f9c9-4580-a7cb-5b7a34655819"]
+Cell[35557, 981, 539, 13, 28, "Input",ExpressionUUID->"77cfd193-e0ca-478c-885d-de6454c0eac8"],
+Cell[36099, 996, 480, 13, 32, "Output",ExpressionUUID->"ed335999-f9c9-4580-a7cb-5b7a34655819"]
 }, Open  ]],
-Cell[36499, 1011, 800, 22, 127, "Text",ExpressionUUID->"735a44c4-fa59-43f9-bc40-03c32a8cf80a"],
+Cell[36594, 1012, 800, 22, 127, "Text",ExpressionUUID->"735a44c4-fa59-43f9-bc40-03c32a8cf80a"],
 Cell[CellGroupData[{
-Cell[37324, 1037, 545, 14, 28, "Input",ExpressionUUID->"a31187b4-b43d-4238-9192-3c97ea13b5cb"],
-Cell[37872, 1053, 206, 4, 32, "Output",ExpressionUUID->"a90192d5-fbcd-4def-a424-9c7ff860d92c"]
+Cell[37419, 1038, 545, 14, 28, "Input",ExpressionUUID->"a31187b4-b43d-4238-9192-3c97ea13b5cb"],
+Cell[37967, 1054, 206, 4, 32, "Output",ExpressionUUID->"a90192d5-fbcd-4def-a424-9c7ff860d92c"]
 }, Open  ]],
-Cell[38093, 1060, 550, 9, 58, "Text",ExpressionUUID->"5fc6235e-9a51-4198-aa73-bb49d2e2ad2d"],
+Cell[38188, 1061, 550, 9, 58, "Text",ExpressionUUID->"5fc6235e-9a51-4198-aa73-bb49d2e2ad2d"],
 Cell[CellGroupData[{
-Cell[38668, 1073, 488, 12, 28, "Input",ExpressionUUID->"05ce0f90-8966-44d7-a1e2-ebe6d731e383"],
-Cell[39159, 1087, 206, 4, 32, "Output",ExpressionUUID->"11c5f936-b0a8-40e9-ae8a-3b55c6ae5f18"]
+Cell[38763, 1074, 488, 12, 28, "Input",ExpressionUUID->"05ce0f90-8966-44d7-a1e2-ebe6d731e383"],
+Cell[39254, 1088, 206, 4, 32, "Output",ExpressionUUID->"11c5f936-b0a8-40e9-ae8a-3b55c6ae5f18"]
 }, Open  ]],
-Cell[39380, 1094, 585, 10, 104, "Text",ExpressionUUID->"28700660-b16b-4198-b814-30d96ed1cc01"],
-Cell[39968, 1106, 832, 21, 86, "Input",ExpressionUUID->"400dbb4a-6709-4df1-9c2b-a51196d52508"],
-Cell[40803, 1129, 390, 8, 58, "Text",ExpressionUUID->"871fbf8d-1cce-404b-9844-acc948f066f0"],
-Cell[41196, 1139, 51417, 1279, 214, "Output",ExpressionUUID->"edd9f82e-25eb-4814-81d9-0aad4a5fd903"],
-Cell[92616, 2420, 430, 8, 58, "Text",ExpressionUUID->"5242f9b9-7668-4f2d-bc5d-5f96173cb021"],
+Cell[39475, 1095, 585, 10, 104, "Text",ExpressionUUID->"28700660-b16b-4198-b814-30d96ed1cc01"],
+Cell[40063, 1107, 832, 21, 86, "Input",ExpressionUUID->"400dbb4a-6709-4df1-9c2b-a51196d52508"],
+Cell[40898, 1130, 390, 8, 58, "Text",ExpressionUUID->"871fbf8d-1cce-404b-9844-acc948f066f0"],
+Cell[41291, 1140, 51417, 1279, 214, "Output",ExpressionUUID->"edd9f82e-25eb-4814-81d9-0aad4a5fd903"],
+Cell[92711, 2421, 430, 8, 58, "Text",ExpressionUUID->"5242f9b9-7668-4f2d-bc5d-5f96173cb021"],
 Cell[CellGroupData[{
-Cell[93071, 2432, 183, 4, 28, "Input",ExpressionUUID->"29cb0364-ec8c-475f-a663-bbcd62882503"],
-Cell[93257, 2438, 170, 4, 32, "Output",ExpressionUUID->"99c0a661-6363-43c9-b764-2f4f8a13a2ae"]
+Cell[93166, 2433, 183, 4, 28, "Input",ExpressionUUID->"29cb0364-ec8c-475f-a663-bbcd62882503"],
+Cell[93352, 2439, 170, 4, 32, "Output",ExpressionUUID->"99c0a661-6363-43c9-b764-2f4f8a13a2ae"]
 }, Closed]],
-Cell[93442, 2445, 413, 8, 77, "Text",ExpressionUUID->"cca4a2d2-bf04-47f9-9c4f-735a90c58f2b"],
+Cell[93537, 2446, 413, 8, 77, "Text",ExpressionUUID->"cca4a2d2-bf04-47f9-9c4f-735a90c58f2b"],
 Cell[CellGroupData[{
-Cell[93880, 2457, 217, 3, 28, "Input",ExpressionUUID->"241d0293-f31b-425d-b38a-4d74e49b49e2"],
-Cell[94100, 2462, 112511, 2404, 316, "Output",ExpressionUUID->"1c431665-6c15-4e0a-a599-637a9ef4d5e7"]
+Cell[93975, 2458, 217, 3, 28, "Input",ExpressionUUID->"241d0293-f31b-425d-b38a-4d74e49b49e2"],
+Cell[94195, 2463, 112511, 2404, 316, "Output",ExpressionUUID->"1c431665-6c15-4e0a-a599-637a9ef4d5e7"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[206660, 4872, 171, 3, 67, "Section",ExpressionUUID->"b06a79f5-3bef-4e80-a553-1b9df63c13cc"],
-Cell[206834, 4877, 600, 10, 81, "Text",ExpressionUUID->"9daf26ab-168c-434d-a4ff-9ccf7e23d81c"],
-Cell[207437, 4889, 769, 23, 86, "Input",ExpressionUUID->"ae6da0be-55a5-4f7c-a436-a19175134f68"],
-Cell[208209, 4914, 886, 15, 150, "Text",ExpressionUUID->"f5fea923-4eec-459b-ab45-432a0cc6df45"],
-Cell[209098, 4931, 112527, 2404, 460, "Output",ExpressionUUID->"d26c0f82-83da-47f1-a090-e960a2336774"],
-Cell[321628, 7337, 255, 5, 35, "Text",ExpressionUUID->"4b7d98a9-1128-4b75-96a8-05cdc6230586"]
+Cell[206755, 4873, 171, 3, 67, "Section",ExpressionUUID->"b06a79f5-3bef-4e80-a553-1b9df63c13cc"],
+Cell[206929, 4878, 600, 10, 81, "Text",ExpressionUUID->"9daf26ab-168c-434d-a4ff-9ccf7e23d81c"],
+Cell[207532, 4890, 769, 23, 86, "Input",ExpressionUUID->"ae6da0be-55a5-4f7c-a436-a19175134f68"],
+Cell[208304, 4915, 886, 15, 150, "Text",ExpressionUUID->"f5fea923-4eec-459b-ab45-432a0cc6df45"],
+Cell[209193, 4932, 112527, 2404, 460, "Output",ExpressionUUID->"d26c0f82-83da-47f1-a090-e960a2336774"],
+Cell[321723, 7338, 773, 13, 104, "Text",ExpressionUUID->"4b7d98a9-1128-4b75-96a8-05cdc6230586"],
+Cell[CellGroupData[{
+Cell[322521, 7355, 379, 8, 48, "Input",ExpressionUUID->"1ff2605c-45d2-4594-953b-0e852e233a07"],
+Cell[322903, 7365, 196, 3, 32, "Output",ExpressionUUID->"2ab02529-5274-4a86-9103-d0445122dad7"]
+}, Open  ]],
+Cell[323114, 7371, 213, 5, 35, "Text",ExpressionUUID->"49b623ec-92fd-4a18-9439-113d5ac58645"],
+Cell[CellGroupData[{
+Cell[323352, 7380, 565, 17, 28, "Input",ExpressionUUID->"a9a2cf23-f04f-4fc7-bd33-9877b471b06e"],
+Cell[323920, 7399, 377, 11, 32, "Output",ExpressionUUID->"0c2b4879-787c-412b-9592-a3372704e681"]
+}, Open  ]],
+Cell[324312, 7413, 686, 14, 127, "Text",ExpressionUUID->"431390d4-1754-40c2-acf1-0f5c4e5c0803",
+ InitializationCell->True],
+Cell[325001, 7429, 321, 7, 58, "Text",ExpressionUUID->"60afb37b-f6af-4418-a8d6-4bac709001a2"],
+Cell[CellGroupData[{
+Cell[325347, 7440, 256, 5, 28, "Input",ExpressionUUID->"e1390778-207c-4cb6-ad7d-67f733740abd"],
+Cell[325606, 7447, 156, 3, 32, "Output",ExpressionUUID->"ce56864e-0ff4-4a31-874f-7f8cc2b1b520"]
+}, Open  ]],
+Cell[325777, 7453, 469, 9, 58, "Text",ExpressionUUID->"c1c176d9-3677-46fc-9058-d1bff79bf8c0"],
+Cell[326249, 7464, 446, 12, 28, "Input",ExpressionUUID->"9cb399ce-331a-4d14-80dc-e2b0e35fe18c"],
+Cell[326698, 7478, 379, 9, 58, "Text",ExpressionUUID->"aa8cbfcb-a73d-41c1-a69a-10f1de7ea778"],
+Cell[327080, 7489, 424, 12, 28, "Input",ExpressionUUID->"79041ada-66a4-4c62-90ac-e947e4ca9238"],
+Cell[CellGroupData[{
+Cell[327529, 7505, 346, 8, 28, "Input",ExpressionUUID->"c6243b71-9603-493f-85d3-00b25855d8d5"],
+Cell[327878, 7515, 112577, 2406, 95, "Output",ExpressionUUID->"d0efb431-8e5a-4755-871b-c285e3274472"]
+}, Open  ]],
+Cell[440470, 9924, 382, 10, 58, "Text",ExpressionUUID->"1a851575-37d5-4aa5-a710-60ff60e21d8f"],
+Cell[CellGroupData[{
+Cell[440877, 9938, 511, 12, 28, "Input",ExpressionUUID->"a4dc510c-055a-4afe-9191-e1a986d98362"],
+Cell[441391, 9952, 267, 7, 32, "Output",ExpressionUUID->"3acd618a-82f8-4e54-98bb-90c5a4e2d347"]
+}, Open  ]],
+Cell[441673, 9962, 415, 8, 81, "Text",ExpressionUUID->"0719f33a-e15e-4771-83e9-7d63fafafd67"],
+Cell[CellGroupData[{
+Cell[442113, 9974, 307, 8, 28, "Input",ExpressionUUID->"313b4204-685d-43d8-8524-ef3da6829732"],
+Cell[442423, 9984, 228, 5, 32, "Output",ExpressionUUID->"2bc2c2f8-c624-4606-bf38-3b014c096d8b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[321920, 7347, 154, 3, 67, "Section",ExpressionUUID->"5b1cf704-9cb7-4fbe-a850-0602be74857a"],
-Cell[322077, 7352, 241, 5, 35, "Text",ExpressionUUID->"49952909-5b88-4116-8ca4-c402bc7d9f48"]
+Cell[442688, 9994, 387, 9, 28, "Input",ExpressionUUID->"7fb27546-177c-4662-8c90-2b68c436b2ad"],
+Cell[443078, 10005, 339, 7, 32, "Output",ExpressionUUID->"867d3f9b-697c-4281-93fc-1540a41dc0e9"]
+}, Open  ]],
+Cell[443432, 10015, 320, 7, 58, "Text",ExpressionUUID->"04ccd279-ccb3-4c68-9c70-667e2115a818"],
+Cell[CellGroupData[{
+Cell[443777, 10026, 487, 14, 28, "Input",ExpressionUUID->"2b083a49-762b-4d2f-822f-526efd39382e"],
+Cell[444267, 10042, 233, 5, 32, "Output",ExpressionUUID->"798b4e45-07d0-4b4d-a54b-0e007376c303"]
+}, Open  ]],
+Cell[444515, 10050, 301, 6, 58, "Text",ExpressionUUID->"ea3b5837-4198-4b53-9a67-687c471908da"],
+Cell[444819, 10058, 769, 23, 86, "Input",ExpressionUUID->"1d0866fb-87f2-4da6-a51c-7a3195509557"],
+Cell[445591, 10083, 644, 14, 104, "Text",ExpressionUUID->"65d9f108-347b-4ced-a4ab-f6effae09215"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[322355, 7362, 225, 4, 67, "Section",ExpressionUUID->"aabc49ba-d10c-4a93-8776-684025622aaa"],
-Cell[322583, 7368, 1277, 20, 265, "Text",ExpressionUUID->"0ffbbea2-a558-4950-b17d-98f468999b96"]
+Cell[446272, 10102, 154, 3, 67, "Section",ExpressionUUID->"5b1cf704-9cb7-4fbe-a850-0602be74857a"],
+Cell[446429, 10107, 437, 8, 58, "Text",ExpressionUUID->"49952909-5b88-4116-8ca4-c402bc7d9f48"],
+Cell[446869, 10117, 2812, 82, 276, "Input",ExpressionUUID->"ce9d4512-86ca-4b63-9eb8-0f34fcc3afc0"],
+Cell[449684, 10201, 445, 15, 58, "Text",ExpressionUUID->"b2ad5da0-d1cc-4fbd-bd39-52b88d3ba6df"],
+Cell[450132, 10218, 1041, 20, 150, "Text",ExpressionUUID->"22d1e2e8-faf7-444d-9bc2-1678dffc3b22"],
+Cell[451176, 10240, 418, 12, 81, "Text",ExpressionUUID->"bafb993e-7f04-44dc-b03f-8d8feac37b5c"],
+Cell[CellGroupData[{
+Cell[451619, 10256, 259, 6, 28, "Input",ExpressionUUID->"208b8b06-2c15-4e31-82c8-2067a6ab9893"],
+Cell[451881, 10264, 1691, 58, 65, "Output",ExpressionUUID->"612754a6-206b-471b-bacf-ca975c202a60"]
+}, Open  ]],
+Cell[453587, 10325, 640, 15, 104, "Text",ExpressionUUID->"57a412fe-7360-4803-a633-3fdf19c0dd60"],
+Cell[454230, 10342, 360, 7, 81, "Text",ExpressionUUID->"adf4f530-e059-4a09-9927-913ee0d526b8"],
+Cell[454593, 10351, 762, 22, 67, "Input",ExpressionUUID->"32f36efd-b257-40b5-be6f-a4c7bf077d71"],
+Cell[455358, 10375, 348, 7, 81, "Text",ExpressionUUID->"35d01e62-f75a-4418-a371-4c9af7777709"],
+Cell[455709, 10384, 371, 10, 28, "Input",ExpressionUUID->"4f867ef0-a11e-435e-ade6-4da1cca1629e"],
+Cell[CellGroupData[{
+Cell[456105, 10398, 362, 9, 28, "Input",ExpressionUUID->"f4fb99ee-326b-4e29-957d-3489c89af5ca"],
+Cell[456470, 10409, 352, 8, 32, "Output",ExpressionUUID->"5b3da796-d2eb-496b-ba40-18537bf0dd09"]
+}, Open  ]],
+Cell[456837, 10420, 361, 7, 81, "Text",ExpressionUUID->"e6df5913-f545-46f8-8b9c-fa6be123f06b"],
+Cell[CellGroupData[{
+Cell[457223, 10431, 240, 5, 28, "Input",ExpressionUUID->"52bb33dd-d00a-4973-8222-88d2e132e5e2"],
+Cell[CellGroupData[{
+Cell[457488, 10440, 405, 14, 22, "Print",ExpressionUUID->"9728e366-7514-48dd-b4c7-d001957b0aa3"],
+Cell[457896, 10456, 368, 12, 22, "Print",ExpressionUUID->"0cfd80da-a591-4484-9af7-1bd8762ea055"],
+Cell[458267, 10470, 353, 12, 22, "Print",ExpressionUUID->"cb381616-cc02-4a4d-8054-dc35c705c22c"],
+Cell[458623, 10484, 816, 25, 22, "Print",ExpressionUUID->"3d086887-a2be-432c-911b-631e3a249d62"],
+Cell[459442, 10511, 380, 12, 22, "Print",ExpressionUUID->"97dfa87a-4f84-4721-813e-1b07d035c0a3"],
+Cell[459825, 10525, 385, 13, 22, "Print",ExpressionUUID->"68b5326f-f9c2-4808-be90-ce8504f51b6f"],
+Cell[460213, 10540, 367, 12, 22, "Print",ExpressionUUID->"7e46ac1f-758e-4173-b943-036a4e72b34b"],
+Cell[460583, 10554, 355, 12, 22, "Print",ExpressionUUID->"805d7980-0c75-4778-8b9b-9881e13088fd"],
+Cell[460941, 10568, 355, 12, 22, "Print",ExpressionUUID->"27f65929-634d-49d1-8242-6fec5ee02163"],
+Cell[461299, 10582, 362, 12, 22, "Print",ExpressionUUID->"56720cbc-056e-4258-998a-de55d4057925"],
+Cell[461664, 10596, 791, 24, 22, "Print",ExpressionUUID->"af35b83a-8668-4058-89bb-908ea7463720"],
+Cell[462458, 10622, 678, 21, 22, "Print",ExpressionUUID->"4d1a2278-d3b0-47ae-9c18-02e575d70f33"],
+Cell[463139, 10645, 380, 12, 22, "Print",ExpressionUUID->"2167c450-2ad0-498c-93a8-71572abaef19"],
+Cell[463522, 10659, 537, 17, 22, "Print",ExpressionUUID->"0d3aa662-8bff-4d4c-92cb-d6f3915112d2"],
+Cell[464062, 10678, 359, 12, 22, "Print",ExpressionUUID->"afcf7baa-9c2c-4b1b-a9bd-39193a9608c9"],
+Cell[464424, 10692, 436, 15, 22, "Print",ExpressionUUID->"2a7423e4-49a1-4c86-9898-1fa70de5bfd2"],
+Cell[464863, 10709, 369, 12, 22, "Print",ExpressionUUID->"d5398355-bc51-4679-8154-3b0e5a25ee2f"],
+Cell[465235, 10723, 385, 13, 22, "Print",ExpressionUUID->"2c9be216-c658-45c5-87a6-964b17701419"],
+Cell[465623, 10738, 363, 12, 22, "Print",ExpressionUUID->"91314082-ae2c-486c-b7f6-9540e6751a49"],
+Cell[465989, 10752, 357, 12, 22, "Print",ExpressionUUID->"698e82f9-4833-4e75-ac47-48774a207aef"],
+Cell[466349, 10766, 375, 13, 22, "Print",ExpressionUUID->"a3cbe7df-9899-4fcc-b0a0-4e009ffa8314"],
+Cell[466727, 10781, 354, 12, 22, "Print",ExpressionUUID->"8e1c5056-bb1e-454e-8841-4e10d302db44"],
+Cell[467084, 10795, 404, 14, 22, "Print",ExpressionUUID->"4c389eb4-1e07-4ae3-8598-87815eae5379"],
+Cell[467491, 10811, 355, 12, 22, "Print",ExpressionUUID->"aab85840-8a46-4a42-92c6-dc73877a40d5"],
+Cell[467849, 10825, 436, 15, 22, "Print",ExpressionUUID->"d6f13050-f6e8-4aed-b4d0-be193fdd8083"],
+Cell[468288, 10842, 369, 12, 22, "Print",ExpressionUUID->"199cb36d-71c0-44f8-af9a-db2164aa1ba5"],
+Cell[468660, 10856, 385, 13, 22, "Print",ExpressionUUID->"523378c5-4531-4e61-bbda-64497a1697e7"],
+Cell[469048, 10871, 363, 12, 22, "Print",ExpressionUUID->"6d3fcee7-2c10-4fc1-8373-110ba7a62388"],
+Cell[469414, 10885, 357, 12, 22, "Print",ExpressionUUID->"9df59dff-f2da-4295-969e-0a1cf0541129"],
+Cell[469774, 10899, 376, 13, 22, "Print",ExpressionUUID->"2f584bcb-4056-46a1-b184-a6a4ae7bc77c"],
+Cell[470153, 10914, 354, 12, 22, "Print",ExpressionUUID->"c46b90c0-47f3-4b07-9876-04b9bb55eff6"],
+Cell[470510, 10928, 404, 14, 22, "Print",ExpressionUUID->"0c7072ba-0142-400b-8e55-0ef7320f0687"],
+Cell[470917, 10944, 355, 12, 22, "Print",ExpressionUUID->"cc98bc3a-c252-47e2-bd5c-ef5c14cee3fa"],
+Cell[471275, 10958, 383, 13, 22, "Print",ExpressionUUID->"79a14aba-7e58-47a3-9fc7-1b1576e7a515"],
+Cell[471661, 10973, 354, 12, 22, "Print",ExpressionUUID->"bc754a11-da9b-4e86-8ac8-3d88d04c4da8"]
+}, Open  ]],
+Cell[472030, 10988, 179, 3, 32, "Output",ExpressionUUID->"e58f9e5c-a6eb-4287-867b-2f164a98d15b"]
+}, Open  ]],
+Cell[472224, 10994, 351, 9, 58, "Text",ExpressionUUID->"c5e54c76-bf2f-49c6-9de5-047facbf5bb9"],
+Cell[472578, 11005, 673, 18, 48, "Input",ExpressionUUID->"6b9d6f9d-5cf5-42c6-a5d5-01c81212cb11"],
+Cell[CellGroupData[{
+Cell[473276, 11027, 287, 7, 28, "Input",ExpressionUUID->"7aa21122-5ffb-405f-bed4-b056de836d87"],
+Cell[473566, 11036, 155, 3, 32, "Output",ExpressionUUID->"156fae11-2b30-4ea4-9ea7-bdddeb3364c6"]
+}, Open  ]],
+Cell[473736, 11042, 340, 7, 81, "Text",ExpressionUUID->"b256c8db-8230-484e-8e91-e06db4062225"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[323897, 7393, 159, 3, 67, "Section",ExpressionUUID->"cb679f0e-e9e5-4fa2-a320-c3f0335ab6e2"],
-Cell[324059, 7398, 1343, 26, 265, "Text",ExpressionUUID->"6ba92103-54f0-4b90-b6f6-2017b83919d5"]
+Cell[474113, 11054, 225, 4, 67, "Section",ExpressionUUID->"aabc49ba-d10c-4a93-8776-684025622aaa"],
+Cell[474341, 11060, 1400, 21, 219, "Text",ExpressionUUID->"0ffbbea2-a558-4950-b17d-98f468999b96"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[475778, 11086, 159, 3, 67, "Section",ExpressionUUID->"cb679f0e-e9e5-4fa2-a320-c3f0335ab6e2"],
+Cell[475940, 11091, 1343, 26, 196, "Text",ExpressionUUID->"6ba92103-54f0-4b90-b6f6-2017b83919d5"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
